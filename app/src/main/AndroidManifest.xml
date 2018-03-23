@@ -19,9 +19,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".FarmScreen" />
         <activity android:name=".ChooseGenderScreen" />
-        <activity android:name=".InventoryScreen" />
         <activity android:name=".SoundScreen"></activity>
     </application>
 
