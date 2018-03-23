@@ -15,7 +15,6 @@
         android:layout_marginTop="24dp"
         android:contentDescription="logo"
         app:layout_constraintBottom_toTopOf="@+id/girlButton"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/harvestvalley" />
@@ -25,7 +24,6 @@
         android:layout_width="185dp"
         android:layout_height="130dp"
         android:layout_marginBottom="8dp"
-        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:backgroundTint="@android:color/transparent"
         app:layout_constraintBottom_toBottomOf="parent"
