@@ -13,7 +13,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="35dp"
-        android:contentDescription="@string/pagename"
+        android:contentDescription=""
         android:fontFamily="@font/architects_daughter"
         android:text="@string/market"
         android:textAppearance="@style/TextAppearance.AppCompat.Title"
@@ -25,7 +25,9 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:contentDescription="@android:string/pane"
+        android:contentDescription=""
+        android:cropToPadding="false"
+        android:scaleType="matrix"
         app:srcCompat="@drawable/inventory" />
 
     <ImageButton
@@ -36,7 +38,7 @@
         android:layout_alignStart="@+id/textView2"
         android:layout_alignTop="@+id/cornSeeds"
         android:background="@android:color/transparent"
-        android:contentDescription="@android:string/pepper "
+        android:contentDescription=" "
         app:srcCompat="@drawable/pepperseeds" />
 
     <ImageButton
@@ -50,11 +52,11 @@
         android:layout_toLeftOf="@+id/pepperSeeds "
         android:layout_toStartOf="@+id/pepperSeeds "
         android:background="@android:color/transparent"
-        android:contentDescription="@string/cornseeds"
+        android:contentDescription=""
         app:srcCompat="@drawable/cornseeds" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/strawberrySeeds"
         android:layout_width="37dp"
         android:layout_height="49dp"
         android:layout_alignTop="@+id/pepperSeeds "
@@ -66,24 +68,36 @@
         app:srcCompat="@drawable/strawberryseeds" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/tomatoSeeds"
         android:layout_width="37dp"
         android:layout_height="49dp"
-        android:layout_alignTop="@+id/imageButton3"
+        android:layout_alignTop="@+id/strawberrySeeds"
         android:layout_marginLeft="19dp"
         android:layout_marginStart="19dp"
-        android:layout_toEndOf="@+id/imageButton3"
-        android:layout_toRightOf="@+id/imageButton3"
+        android:layout_toEndOf="@+id/strawberrySeeds"
+        android:layout_toRightOf="@+id/strawberrySeeds"
         android:background="@android:color/transparent"
         app:srcCompat="@drawable/tomatoseeds" />
 
     <ImageButton
-        android:id="@+id/imageButton5"
+        android:id="@+id/potatoSeeds"
+        android:layout_width="37dp"
+        android:layout_height="49dp"
+        android:layout_alignTop="@+id/wheatSeeds"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/wheatSeeds"
+        android:layout_toRightOf="@+id/wheatSeeds"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/potatoseeds" />
+
+    <ImageButton
+        android:id="@+id/wheatSeeds"
         android:layout_width="37dp"
         android:layout_height="49dp"
         android:layout_alignEnd="@+id/textView2"
         android:layout_alignRight="@+id/textView2"
-        android:layout_alignTop="@+id/imageButton4"
+        android:layout_alignTop="@+id/tomatoSeeds"
         android:background="@android:color/transparent"
         app:srcCompat="@drawable/wheatseeds" />
 
