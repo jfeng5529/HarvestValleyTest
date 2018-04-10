@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:foreground="@android:color/transparent">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:contentDescription="@string/pagename"
+        android:fontFamily="@font/architects_daughter"
+        android:text="@string/market"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textSize="50sp" />
+
+    <ImageView
+        android:id="@+id/pane "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@android:string/pane"
+        app:srcCompat="@drawable/inventory" />
+
+    <ImageButton
+        android:id="@+id/pepperSeeds "
+        android:layout_width="37dp"
+        android:layout_height="49dp"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_alignTop="@+id/cornSeeds"
+        android:background="@android:color/transparent"
+        android:contentDescription="@android:string/pepper "
+        app:srcCompat="@drawable/pepperseeds" />
+
+    <ImageButton
+        android:id="@+id/cornSeeds"
+        android:layout_width="37dp"
+        android:layout_height="49dp"
+        android:layout_alignTop="@+id/pane "
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="30dp"
+        android:layout_toLeftOf="@+id/pepperSeeds "
+        android:layout_toStartOf="@+id/pepperSeeds "
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/cornseeds"
+        app:srcCompat="@drawable/cornseeds" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="37dp"
+        android:layout_height="49dp"
+        android:layout_alignTop="@+id/pepperSeeds "
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/pepperSeeds "
+        android:layout_toRightOf="@+id/pepperSeeds "
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/strawberryseeds" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="37dp"
+        android:layout_height="49dp"
+        android:layout_alignTop="@+id/imageButton3"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_toEndOf="@+id/imageButton3"
+        android:layout_toRightOf="@+id/imageButton3"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/tomatoseeds" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="37dp"
+        android:layout_height="49dp"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignTop="@+id/imageButton4"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/wheatseeds" />
+
+</RelativeLayout>
