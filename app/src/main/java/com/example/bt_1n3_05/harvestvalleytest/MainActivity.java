@@ -20,15 +20,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-       newButton = (FloatingActionButton) findViewById(R.id.newButton);
-       newButton.setOnClickListener(new View.OnClickListener() {
+        newButton = findViewById(R.id.newButton);
+        newButton.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
                openChooseGenderScreen();
            }
        });
 
-        musicButton = (ImageButton) findViewById(R.id.musicButton);
+        musicButton = findViewById(R.id.musicButton);
         musicButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

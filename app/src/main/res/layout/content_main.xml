@@ -24,31 +24,26 @@
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/newButton"
-        android:layout_width="168dp"
+        android:layout_width="140dp"
         android:layout_height="142dp"
-        android:layout_marginBottom="56dp"
-        android:layout_marginTop="35dp"
+        android:layout_marginBottom="92dp"
         android:clickable="true"
         app:backgroundTint="@android:color/transparent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="1.0"
         app:rippleColor="@android:color/transparent"
         app:srcCompat="@drawable/newbutton" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/loadButton"
         android:layout_width="199dp"
-        android:layout_height="143dp"
-        android:layout_marginBottom="56dp"
-        android:layout_marginTop="36dp"
+        android:layout_height="140dp"
         android:clickable="true"
         app:backgroundTint="@android:color/transparent"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/newButton"
+        app:layout_constraintTop_toTopOf="@+id/newButton"
         app:srcCompat="@drawable/loadbutton" />
 
     <ImageButton
@@ -62,10 +57,9 @@
         android:backgroundTint="@android:color/transparent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.029"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.316"
+        app:layout_constraintVertical_bias="0.758"
         app:srcCompat="@drawable/music" />
 
 </android.support.constraint.ConstraintLayout>
