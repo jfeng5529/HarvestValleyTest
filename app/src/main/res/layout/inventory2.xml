@@ -20,91 +20,196 @@
         android:textSize="50sp" />
 
     <ImageView
-        android:id="@+id/pane "
-        android:layout_width="wrap_content"
+        android:id="@+id/imageView2"
+        android:layout_width="350"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:contentDescription=""
-        android:cropToPadding="false"
-        android:scaleType="matrix"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
         app:srcCompat="@drawable/inventory" />
 
     <ImageButton
-        android:id="@+id/pepperSeeds "
+        android:id="@+id/corn"
         android:layout_width="37dp"
         android:layout_height="49dp"
-        android:layout_alignLeft="@+id/textView2"
-        android:layout_alignStart="@+id/textView2"
-        android:layout_alignTop="@+id/cornSeeds"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_marginTop="50dp"
+        android:layout_toEndOf="@+id/tomato "
+        android:layout_toRightOf="@+id/tomato "
+        android:adjustViewBounds="true"
         android:background="@android:color/transparent"
-        android:contentDescription=" "
-        android:onClick="onButtonItems"
-        app:srcCompat="@drawable/pepperseeds" />
-
-    <ImageButton
-        android:id="@+id/cornSeeds"
-        android:layout_width="37dp"
-        android:layout_height="49dp"
-        android:layout_alignTop="@+id/pane "
-        android:layout_marginEnd="13dp"
-        android:layout_marginRight="13dp"
-        android:layout_marginTop="30dp"
-        android:layout_toLeftOf="@+id/pepperSeeds "
-        android:layout_toStartOf="@+id/pepperSeeds "
-        android:background="@android:color/transparent"
-        android:contentDescription=""
-        android:onClick="onButtonItems"
+        android:scaleType="fitCenter"
         app:srcCompat="@drawable/cornseeds" />
 
     <ImageButton
-        android:id="@+id/strawberrySeeds"
+        android:id="@+id/tomato "
         android:layout_width="37dp"
         android:layout_height="49dp"
-        android:layout_alignTop="@+id/pepperSeeds "
-        android:layout_marginLeft="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_toEndOf="@+id/pepperSeeds "
-        android:layout_toRightOf="@+id/pepperSeeds "
+        android:layout_alignTop="@+id/corn"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_toLeftOf="@+id/textView2"
+        android:layout_toStartOf="@+id/textView2"
+        android:adjustViewBounds="true"
         android:background="@android:color/transparent"
+<<<<<<< Updated upstream
+        android:contentDescription=" "
         android:onClick="onButtonItems"
-        app:srcCompat="@drawable/strawberryseeds" />
-
-    <ImageButton
-        android:id="@+id/tomatoSeeds"
-        android:layout_width="37dp"
-        android:layout_height="49dp"
-        android:layout_alignTop="@+id/strawberrySeeds"
-        android:layout_marginLeft="19dp"
-        android:layout_marginStart="19dp"
-        android:layout_toEndOf="@+id/strawberrySeeds"
-        android:layout_toRightOf="@+id/strawberrySeeds"
-        android:background="@android:color/transparent"
-        android:onClick="onButtonItems"
+=======
+        android:scaleType="fitCenter"
         app:srcCompat="@drawable/tomatoseeds" />
 
     <ImageButton
-        android:id="@+id/potatoSeeds"
+        android:id="@+id/pepper"
         android:layout_width="37dp"
         android:layout_height="49dp"
-        android:layout_alignTop="@+id/wheatSeeds"
-        android:layout_marginLeft="15dp"
-        android:layout_marginStart="15dp"
-        android:layout_toEndOf="@+id/wheatSeeds"
-        android:layout_toRightOf="@+id/wheatSeeds"
+        android:layout_alignTop="@+id/corn"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/corn"
+        android:layout_toRightOf="@+id/corn"
+        android:adjustViewBounds="true"
         android:background="@android:color/transparent"
-        android:onClick="onButtonItems"
-        app:srcCompat="@drawable/potatoseeds" />
+        android:scaleType="fitCenter"
+>>>>>>> Stashed changes
+        app:srcCompat="@drawable/pepperseeds" />
 
     <ImageButton
-        android:id="@+id/wheatSeeds"
+        android:id="@+id/potato"
+        android:layout_width="37dp"
+        android:layout_height="49dp"
+        android:layout_alignTop="@+id/pepper"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_toEndOf="@+id/pepper"
+        android:layout_toRightOf="@+id/pepper"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+<<<<<<< Updated upstream
+        android:contentDescription=""
+        android:onClick="onButtonItems"
+        app:srcCompat="@drawable/cornseeds" />
+=======
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/potatoseeds" />
+>>>>>>> Stashed changes
+
+    <ImageButton
+        android:id="@+id/strawberry"
         android:layout_width="37dp"
         android:layout_height="49dp"
         android:layout_alignEnd="@+id/textView2"
         android:layout_alignRight="@+id/textView2"
-        android:layout_alignTop="@+id/tomatoSeeds"
+        android:layout_alignTop="@+id/potato"
+        android:adjustViewBounds="true"
         android:background="@android:color/transparent"
+<<<<<<< Updated upstream
+        android:onClick="onButtonItems"
+=======
+        android:scaleType="fitCenter"
+>>>>>>> Stashed changes
+        app:srcCompat="@drawable/strawberryseeds" />
+
+    <ImageButton
+        android:id="@+id/wheat"
+        android:layout_width="37dp"
+        android:layout_height="49dp"
+        android:layout_alignTop="@+id/strawberry"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_toEndOf="@+id/strawberry"
+        android:layout_toRightOf="@+id/strawberry"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+<<<<<<< Updated upstream
+        android:onClick="onButtonItems"
+        app:srcCompat="@drawable/tomatoseeds" />
+=======
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/wheatseeds" />
+
+    <ImageButton
+        android:id="@+id/cow"
+        android:layout_width="40dp"
+        android:layout_height="37dp"
+        android:layout_alignLeft="@+id/tomato "
+        android:layout_alignStart="@+id/tomato "
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/cow" />
+>>>>>>> Stashed changes
+
+    <ImageButton
+        android:id="@+id/imageButton13"
+        android:layout_width="37dp"
+        android:layout_height="49dp"
+        android:layout_alignLeft="@+id/corn"
+        android:layout_alignStart="@+id/corn"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+<<<<<<< Updated upstream
+        android:onClick="onButtonItems"
+        app:srcCompat="@drawable/potatoseeds" />
+=======
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/sheep" />
+>>>>>>> Stashed changes
+
+    <ImageButton
+        android:id="@+id/blackchicken"
+        android:layout_width="37dp"
+        android:layout_height="49dp"
+        android:layout_alignLeft="@+id/pepper"
+        android:layout_alignStart="@+id/pepper"
+        android:layout_alignTop="@+id/imageButton13"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+<<<<<<< Updated upstream
         android:onClick="onButtonItems"
         app:srcCompat="@drawable/wheatseeds" />
+=======
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/blackchicken" />
+
+    <ImageButton
+        android:id="@+id/whitechicken"
+        android:layout_width="37dp"
+        android:layout_height="49dp"
+        android:layout_alignLeft="@+id/potato"
+        android:layout_alignStart="@+id/potato"
+        android:layout_alignTop="@+id/blackchicken"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/whitechicken" />
+
+    <ImageButton
+        android:id="@+id/brownchicken"
+        android:layout_width="37dp"
+        android:layout_height="49dp"
+        android:layout_alignLeft="@+id/strawberry"
+        android:layout_alignStart="@+id/strawberry"
+        android:layout_alignTop="@+id/pig"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/brownchicken" />
+
+    <ImageButton
+        android:id="@+id/pig"
+        android:layout_width="37dp"
+        android:layout_height="49dp"
+        android:layout_alignLeft="@+id/wheat"
+        android:layout_alignStart="@+id/wheat"
+        android:layout_alignTop="@+id/whitechicken"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/pig" />
+>>>>>>> Stashed changes
 
 </RelativeLayout>
