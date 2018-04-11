@@ -13,7 +13,6 @@
         android:layout_height="305dp"
         android:layout_marginBottom="8dp"
         android:layout_marginTop="24dp"
-        android:contentDescription="logo"
         app:layout_constraintBottom_toTopOf="@+id/girlButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -30,7 +29,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.745"
-        app:srcCompat="@drawable/boybutton" />
+        app:srcCompat="@drawable/boybutton"/>
 
     <ImageButton
         android:id="@+id/girlButton"
@@ -47,6 +46,6 @@
         app:layout_constraintStart_toEndOf="@+id/boyButton"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.743"
-        app:srcCompat="@drawable/girlbutton" />
+        app:srcCompat="@drawable/girlbutton"/>
 
 </android.support.constraint.ConstraintLayout>

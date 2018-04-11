@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">HarvestValleyTest</string>
     <string name="action_settings">Settings</string>
+    <string name="fall_the_smell_of_mushroom">Fall (The Smell Of Mushroom)</string>
+    <string name="spring_the_valley_comes_alive">Spring (The Valley Comes Alive)</string>
+    <string name="spring_it_s_a_big_world_outside">Spring (It\'s A Big World Outside)</string>
+    <string name="summer_nature_s_crescendo">Summer (Nature\'s Crescendo)</string>
+    <string name="winter_nocturne_of_ice">Winter (Nocturne Of Ice)</string>
 </resources>
