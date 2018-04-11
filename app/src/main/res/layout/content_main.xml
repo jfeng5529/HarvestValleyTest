@@ -9,56 +9,20 @@
     tools:showIn="@layout/activity_main"
     android:background="@drawable/background">
 
-    <ImageView
-        android:id="@+id/imageView"
+    <TextView
+        android:id="@+id/objectivesTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginTop="24dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/harvestvalley" />
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/newButton"
-        android:layout_width="140dp"
-        android:layout_height="142dp"
-        android:layout_marginBottom="92dp"
-        android:clickable="true"
-        app:backgroundTint="@android:color/transparent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:rippleColor="@android:color/transparent"
-        app:srcCompat="@drawable/newbutton"/>
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/loadButton"
-        android:layout_width="199dp"
-        android:layout_height="140dp"
-        android:clickable="true"
-        app:backgroundTint="@android:color/transparent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/newButton"
-        app:layout_constraintTop_toTopOf="@+id/newButton"
-        app:srcCompat="@drawable/loadbutton" />
-
-    <ImageButton
-        android:id="@+id/musicButton"
-        android:layout_width="100dp"
-        android:layout_height="84dp"
-        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:backgroundTint="@android:color/transparent"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/burnstown_dam"
+        android:text="OBJECTIVES"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="45sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.758"
-        app:srcCompat="@drawable/music" />
-
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>
