@@ -39,6 +39,7 @@
         android:layout_alignTop="@+id/cornSeeds"
         android:background="@android:color/transparent"
         android:contentDescription=" "
+        android:onClick="onButtonItems"
         app:srcCompat="@drawable/pepperseeds" />
 
     <ImageButton
@@ -53,6 +54,7 @@
         android:layout_toStartOf="@+id/pepperSeeds "
         android:background="@android:color/transparent"
         android:contentDescription=""
+        android:onClick="onButtonItems"
         app:srcCompat="@drawable/cornseeds" />
 
     <ImageButton
@@ -65,6 +67,7 @@
         android:layout_toEndOf="@+id/pepperSeeds "
         android:layout_toRightOf="@+id/pepperSeeds "
         android:background="@android:color/transparent"
+        android:onClick="onButtonItems"
         app:srcCompat="@drawable/strawberryseeds" />
 
     <ImageButton
@@ -77,6 +80,7 @@
         android:layout_toEndOf="@+id/strawberrySeeds"
         android:layout_toRightOf="@+id/strawberrySeeds"
         android:background="@android:color/transparent"
+        android:onClick="onButtonItems"
         app:srcCompat="@drawable/tomatoseeds" />
 
     <ImageButton
@@ -89,6 +93,7 @@
         android:layout_toEndOf="@+id/wheatSeeds"
         android:layout_toRightOf="@+id/wheatSeeds"
         android:background="@android:color/transparent"
+        android:onClick="onButtonItems"
         app:srcCompat="@drawable/potatoseeds" />
 
     <ImageButton
@@ -99,6 +104,7 @@
         android:layout_alignRight="@+id/textView2"
         android:layout_alignTop="@+id/tomatoSeeds"
         android:background="@android:color/transparent"
+        android:onClick="onButtonItems"
         app:srcCompat="@drawable/wheatseeds" />
 
 </RelativeLayout>
