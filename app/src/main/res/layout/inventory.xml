@@ -13,8 +13,9 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="37dp"
+        android:contentDescription="@string/market"
         android:fontFamily="@font/architects_daughter"
-        android:text="MARKET"
+        android:text="@string/market"
         android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="70sp"
@@ -29,6 +30,7 @@
         android:layout_below="@+id/textView"
         android:layout_marginTop="11dp"
         android:adjustViewBounds="true"
+        android:contentDescription="@string/pane"
         app:srcCompat="@drawable/inventory" />
 
     <ImageButton
@@ -43,6 +45,7 @@
         android:layout_marginTop="57dp"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
+        android:contentDescription="@string/corn"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/cornseeds" />
 
@@ -57,6 +60,7 @@
         android:layout_toRightOf="@+id/imageButton"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
+        android:contentDescription="@string/garlic"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/garlicseeds" />
 
@@ -71,6 +75,7 @@
         android:layout_toRightOf="@+id/imageButton2"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
+        android:contentDescription="@string/pepper"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/pepperseeds" />
 
@@ -85,6 +90,7 @@
         android:layout_toRightOf="@+id/imageButton3"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
+        android:contentDescription="@string/potato"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/potatoseeds" />
 
@@ -99,6 +105,7 @@
         android:layout_toRightOf="@+id/imageButton4"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
+        android:contentDescription="@string/strawberry"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/strawberryseeds" />
 
@@ -113,6 +120,7 @@
         android:layout_toRightOf="@+id/imageButton5"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
+        android:contentDescription="@string/tomato"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/tomatoseeds" />
 
@@ -126,6 +134,7 @@
         android:layout_marginTop="19dp"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
+        android:contentDescription="@string/wheat"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/wheatseeds" />
 
@@ -138,6 +147,7 @@
         android:layout_alignTop="@+id/imageButton7"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
+        android:contentDescription="@string/blackchicken"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/blackchicken" />
 
@@ -150,6 +160,7 @@
         android:layout_alignTop="@+id/imageButton8"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
+        android:contentDescription="@string/brownchicken"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/brownchicken" />
 
@@ -162,6 +173,7 @@
         android:layout_alignTop="@+id/imageButton10"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
+        android:contentDescription="@string/whitechicken"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/whitechicken" />
 
@@ -174,6 +186,7 @@
         android:layout_alignTop="@+id/imageButton11"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
+        android:contentDescription="@string/cow"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/cow" />
 
@@ -186,6 +199,7 @@
         android:layout_alignTop="@+id/imageButton12"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
+        android:contentDescription="@string/duck"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/duck" />
 
@@ -198,6 +212,7 @@
         android:layout_below="@+id/imageButton7"
         android:layout_marginTop="22dp"
         android:background="@android:color/transparent"
+        android:contentDescription="@string/pig"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/pig" />
 
@@ -210,6 +225,7 @@
         android:layout_alignTop="@+id/imageButton14"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
+        android:contentDescription="@string/rabbit"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/rabbit" />
 
@@ -222,6 +238,7 @@
         android:layout_alignTop="@+id/imageButton15"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
+        android:contentDescription="@string/sheep"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/sheep" />
 
