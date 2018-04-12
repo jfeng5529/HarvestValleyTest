@@ -53,10 +53,9 @@
         android:layout_toStartOf="@+id/textView2"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
-<<<<<<< Updated upstream
+
         android:contentDescription=" "
         android:onClick="onButtonItems"
-=======
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/tomatoseeds" />
 
@@ -72,7 +71,6 @@
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
         android:scaleType="fitCenter"
->>>>>>> Stashed changes
         app:srcCompat="@drawable/pepperseeds" />
 
     <ImageButton
@@ -86,14 +84,11 @@
         android:layout_toRightOf="@+id/pepper"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
-<<<<<<< Updated upstream
         android:contentDescription=""
         android:onClick="onButtonItems"
-        app:srcCompat="@drawable/cornseeds" />
-=======
+
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/potatoseeds" />
->>>>>>> Stashed changes
 
     <ImageButton
         android:id="@+id/strawberry"
@@ -104,11 +99,8 @@
         android:layout_alignTop="@+id/potato"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
-<<<<<<< Updated upstream
         android:onClick="onButtonItems"
-=======
         android:scaleType="fitCenter"
->>>>>>> Stashed changes
         app:srcCompat="@drawable/strawberryseeds" />
 
     <ImageButton
@@ -122,10 +114,8 @@
         android:layout_toRightOf="@+id/strawberry"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
-<<<<<<< Updated upstream
         android:onClick="onButtonItems"
         app:srcCompat="@drawable/tomatoseeds" />
-=======
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/wheatseeds" />
 
@@ -140,7 +130,6 @@
         android:background="@android:color/transparent"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/cow" />
->>>>>>> Stashed changes
 
     <ImageButton
         android:id="@+id/imageButton13"
@@ -151,13 +140,11 @@
         android:layout_centerVertical="true"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
-<<<<<<< Updated upstream
         android:onClick="onButtonItems"
         app:srcCompat="@drawable/potatoseeds" />
-=======
+
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/sheep" />
->>>>>>> Stashed changes
 
     <ImageButton
         android:id="@+id/blackchicken"
@@ -168,10 +155,9 @@
         android:layout_alignTop="@+id/imageButton13"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
-<<<<<<< Updated upstream
         android:onClick="onButtonItems"
         app:srcCompat="@drawable/wheatseeds" />
-=======
+
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/blackchicken" />
 
@@ -210,6 +196,5 @@
         android:background="@android:color/transparent"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/pig" />
->>>>>>> Stashed changes
 
 </RelativeLayout>
