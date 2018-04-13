@@ -14,7 +14,10 @@ import android.widget.ImageButton;
 public class MainActivity extends AppCompatActivity {
 
     private FloatingActionButton newButton;
+    private FloatingActionButton loadButton;
     private ImageButton musicButton;
+    private ImageButton objectives;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,6 +38,14 @@ public class MainActivity extends AppCompatActivity {
                 openSoundScreen();
             }
         });
+
+        objectives = findViewById(R.id.objectives);
+        objectives.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openObjectivesScreen();
+            }
+        });
     }
 
     public void openChooseGenderScreen(){
@@ -44,6 +55,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void openSoundScreen(){
         Intent intent = new Intent(this, SoundScreen.class);
+        startActivity(intent);
+    }
+
+    public void openObjectivesScreen(){
+        Intent intent = new Intent(this, ObjectiveScreen.class);
         startActivity(intent);
     }
 
