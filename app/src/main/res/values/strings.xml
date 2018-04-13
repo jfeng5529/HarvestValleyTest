@@ -9,4 +9,8 @@
     <string name="harvest_valley_soundtracks">HARVEST VALLEY SOUNDTRACKS</string>
     <string name="title">title</string>
     <string name="music">music</string>
+    <string name="object">object</string>
+    <string name="title2">title2</string>
+    <string name="boy">boy</string>
+    <string name="girl">girl</string>
 </resources>
