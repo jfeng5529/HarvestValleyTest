@@ -12,9 +12,8 @@ import android.view.MenuItem;
 import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
-//dgh
+
     private FloatingActionButton newButton;
-    private FloatingActionButton loadButton;
     private ImageButton musicButton;
     private ImageButton objectives;
 
@@ -25,12 +24,11 @@ public class MainActivity extends AppCompatActivity {
 
         newButton = findViewById(R.id.newButton);
         newButton.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View v) {
-               //
-               openChooseGenderScreen();
-           }
-       });
+            @Override
+            public void onClick(View v) {
+                openChooseGenderScreen();
+            }
+        });
 
         musicButton = findViewById(R.id.musicButton);
         musicButton.setOnClickListener(new View.OnClickListener() {
@@ -86,4 +84,3 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 }
-
