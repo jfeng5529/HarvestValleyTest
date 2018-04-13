@@ -11,6 +11,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageButton;
 
+
 public class MainActivity extends AppCompatActivity {
 
     private FloatingActionButton newButton;
@@ -51,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, ChooseGenderScreen.class);
         startActivity(intent);
     }
+
 
     public void openSoundScreen(){
         Intent intent = new Intent(this, SoundScreen.class);
