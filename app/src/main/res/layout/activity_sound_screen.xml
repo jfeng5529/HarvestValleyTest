@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context="com.example.bt_1n3_05.harvestvalleytest.SoundScreen"
     android:background="@drawable/background">
-//
+//comment
     <Button
         android:id="@+id/button"
         android:layout_width="280dp"
