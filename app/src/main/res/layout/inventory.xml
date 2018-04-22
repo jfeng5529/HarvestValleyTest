@@ -1,38 +1,243 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/inventorybackground">
+    android:background="@color/colorAccent">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="60dp">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/market"
+        android:fontFamily="@font/architects_daughter"
+        android:text="@string/market"
+        android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="60sp"
+        android:typeface="serif" />
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="202dp"
-            android:layout_height="75dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="80dp"
-            android:layout_marginStart="80dp"
-            android:layout_marginTop="21dp"
-            android:fontFamily="architects_daughter"
-            android:text="MARKET"
-            android:textAlignment="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Title"
-            android:textSize="46sp"
-            android:textStyle="bold"
-            android:typeface="normal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-    </RelativeLayout>
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/pane"
+        app:srcCompat="@drawable/inventory" />
 
-</android.support.constraint.ConstraintLayout>
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="37dp"
+        android:layout_height="49dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="57dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/corn"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/cornseeds" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="37dp"
+        android:layout_height="49dp"
+        android:layout_alignTop="@+id/imageButton"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/imageButton"
+        android:layout_toRightOf="@+id/imageButton"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/garlic"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/garlicseeds" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="37dp"
+        android:layout_height="49dp"
+        android:layout_alignTop="@+id/imageButton2"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_toEndOf="@+id/imageButton2"
+        android:layout_toRightOf="@+id/imageButton2"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/pepper"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/pepperseeds" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="37dp"
+        android:layout_height="49dp"
+        android:layout_alignTop="@+id/imageButton3"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp"
+        android:layout_toEndOf="@+id/imageButton3"
+        android:layout_toRightOf="@+id/imageButton3"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/potato"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/potatoseeds" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="37dp"
+        android:layout_height="49dp"
+        android:layout_alignTop="@+id/imageButton4"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/imageButton4"
+        android:layout_toRightOf="@+id/imageButton4"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/strawberry"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/strawberryseeds" />
+
+    <ImageButton
+        android:id="@+id/imageButton9"
+        android:layout_width="37dp"
+        android:layout_height="49dp"
+        android:layout_alignTop="@+id/imageButton5"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_toEndOf="@+id/imageButton5"
+        android:layout_toRightOf="@+id/imageButton5"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/tomato"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/tomatoseeds" />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="37dp"
+        android:layout_height="49dp"
+        android:layout_alignLeft="@+id/imageButton"
+        android:layout_alignStart="@+id/imageButton"
+        android:layout_below="@+id/imageButton"
+        android:layout_marginTop="19dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/wheat"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/wheatseeds" />
+
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="37dp"
+        android:layout_height="49dp"
+        android:layout_alignLeft="@+id/imageButton2"
+        android:layout_alignStart="@+id/imageButton2"
+        android:layout_alignTop="@+id/imageButton7"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/blackchicken"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/blackchicken" />
+
+    <ImageButton
+        android:id="@+id/imageButton10"
+        android:layout_width="37dp"
+        android:layout_height="49dp"
+        android:layout_alignLeft="@+id/imageButton3"
+        android:layout_alignStart="@+id/imageButton3"
+        android:layout_alignTop="@+id/imageButton8"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/brownchicken"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/brownchicken" />
+
+    <ImageButton
+        android:id="@+id/imageButton11"
+        android:layout_width="37dp"
+        android:layout_height="49dp"
+        android:layout_alignLeft="@+id/imageButton4"
+        android:layout_alignStart="@+id/imageButton4"
+        android:layout_alignTop="@+id/imageButton10"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/whitechicken"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/whitechicken" />
+
+    <ImageButton
+        android:id="@+id/imageButton12"
+        android:layout_width="37dp"
+        android:layout_height="49dp"
+        android:layout_alignLeft="@+id/imageButton5"
+        android:layout_alignStart="@+id/imageButton5"
+        android:layout_alignTop="@+id/imageButton11"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/cow"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/cow" />
+
+    <ImageButton
+        android:id="@+id/imageButton13"
+        android:layout_width="37dp"
+        android:layout_height="49dp"
+        android:layout_alignLeft="@+id/imageButton9"
+        android:layout_alignStart="@+id/imageButton9"
+        android:layout_alignTop="@+id/imageButton12"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/duck"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/duck" />
+
+    <ImageButton
+        android:id="@+id/imageButton14"
+        android:layout_width="37dp"
+        android:layout_height="49dp"
+        android:layout_alignLeft="@+id/imageButton7"
+        android:layout_alignStart="@+id/imageButton7"
+        android:layout_below="@+id/imageButton7"
+        android:layout_marginTop="22dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/pig"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/pig" />
+
+    <ImageButton
+        android:id="@+id/imageButton15"
+        android:layout_width="37dp"
+        android:layout_height="49dp"
+        android:layout_alignLeft="@+id/imageButton8"
+        android:layout_alignStart="@+id/imageButton8"
+        android:layout_alignTop="@+id/imageButton14"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/rabbit"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/rabbit" />
+
+    <ImageButton
+        android:id="@+id/imageButton17"
+        android:layout_width="37dp"
+        android:layout_height="49dp"
+        android:layout_alignLeft="@+id/imageButton10"
+        android:layout_alignStart="@+id/imageButton10"
+        android:layout_alignTop="@+id/imageButton15"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/sheep"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/sheep" />
+
+</RelativeLayout>
