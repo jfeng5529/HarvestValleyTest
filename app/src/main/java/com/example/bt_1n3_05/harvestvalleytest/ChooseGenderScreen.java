@@ -8,6 +8,6 @@ public class ChooseGenderScreen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.farm);
+        setContentView(R.layout.activity_choose_gender_screen);
     }
 }

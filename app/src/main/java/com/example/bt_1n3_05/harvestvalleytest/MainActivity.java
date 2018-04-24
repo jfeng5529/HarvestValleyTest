@@ -11,10 +11,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageButton;
 
-
 public class MainActivity extends AppCompatActivity {
 
     private FloatingActionButton newButton;
+    private FloatingActionButton loadButton;
     private ImageButton musicButton;
     private ImageButton objectives;
 
@@ -53,7 +53,6 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-
     public void openSoundScreen(){
         Intent intent = new Intent(this, SoundScreen.class);
         startActivity(intent);
@@ -86,3 +85,4 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 }
+
