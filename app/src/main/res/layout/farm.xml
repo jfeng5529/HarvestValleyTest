@@ -18,7 +18,7 @@
         android:layout_marginTop="19dp"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
-        android:contentDescription="@strings/house"
+        android:contentDescription="house"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/house" />
 
@@ -34,7 +34,7 @@
         android:layout_marginTop="46dp"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
-        android:contentDescription="@strings/patch"
+        android:contentDescription="patch"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/patch" />
 
@@ -47,7 +47,7 @@
         android:layout_toRightOf="@+id/imageButton16"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
-        android:contentDescription="@strings/patch"
+        android:contentDescription="patch"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/patch" />
 
@@ -60,7 +60,7 @@
         android:layout_toRightOf="@+id/imageButton16"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
-        android:contentDescription="@strings/patch"
+        android:contentDescription="patch"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/patch" />
 
@@ -74,7 +74,7 @@
         android:layout_marginTop="39dp"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
-        android:contentDescription="@strings/patch"
+        android:contentDescription="patch"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/patch" />
 
@@ -87,7 +87,7 @@
         android:layout_toRightOf="@+id/imageButton18"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
-        android:contentDescription="@strings/patch"
+        android:contentDescription="patch"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/patch" />
 
@@ -100,7 +100,7 @@
         android:layout_toRightOf="@+id/imageButton18"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
-        android:contentDescription="@strings/patch"
+        android:contentDescription="patch"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/patch" />
 
@@ -113,7 +113,7 @@
         android:layout_toRightOf="@+id/imageButton6"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
-        android:contentDescription="@strings/patch"
+        android:contentDescription="patch"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/patch" />
 
@@ -126,7 +126,7 @@
         android:layout_toRightOf="@+id/imageButton25"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
-        android:contentDescription="@strings/patch"
+        android:contentDescription="patch"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/patch" />
 
@@ -139,7 +139,7 @@
         android:layout_alignTop="@+id/imageButton22"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
-        android:contentDescription="@strings/patch"
+        android:contentDescription="patch"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/patch" />
 
@@ -152,7 +152,7 @@
         android:layout_toRightOf="@+id/imageButton23"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
-        android:contentDescription="@strings/patch"
+        android:contentDescription="patch"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/patch" />
 
@@ -165,7 +165,7 @@
         android:layout_toRightOf="@+id/imageButton23"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
-        android:contentDescription="@string/patch"
+        android:contentDescription="patch"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/patch" />
 
@@ -178,7 +178,7 @@
         android:layout_toStartOf="@+id/imageButton23"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
-        android:contentDescription="@string/patch"
+        android:contentDescription="patch"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/patch" />
 
@@ -192,7 +192,7 @@
         android:layout_marginTop="56dp"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
-        android:contentDescription="@string/patch"
+        android:contentDescription="patch"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/patch" />
 
@@ -205,7 +205,7 @@
         android:layout_toRightOf="@+id/imageButton36"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
-        android:contentDescription="@string/patch"
+        android:contentDescription="patch"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/patch" />
 
@@ -218,7 +218,7 @@
         android:layout_toRightOf="@+id/imageButton37"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
-        android:contentDescription="@string/patch"
+        android:contentDescription="patch"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/patch" />
 
@@ -232,7 +232,7 @@
         android:layout_marginTop="36dp"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
-        android:contentDescription="@string/patch"
+        android:contentDescription="patch"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/patch" />
 
@@ -245,7 +245,7 @@
         android:layout_toRightOf="@+id/imageButton37"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
-        android:contentDescription="@string/patch"
+        android:contentDescription="patch"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/patch" />
 
@@ -258,7 +258,7 @@
         android:layout_toRightOf="@+id/imageButton36"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
-        android:contentDescription="@string/patch"
+        android:contentDescription="patch"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/patch" />
 
@@ -271,7 +271,7 @@
         android:layout_toRightOf="@+id/imageButton43"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
-        android:contentDescription="@string/patch"
+        android:contentDescription="patch"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/patch" />
 
@@ -284,7 +284,7 @@
         android:layout_toRightOf="@+id/imageButton45"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
-        android:contentDescription="@string/patch"
+        android:contentDescription="patch"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/patch" />
 
@@ -297,7 +297,7 @@
         android:layout_toRightOf="@+id/imageButton45"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
-        android:contentDescription="@string/patch"
+        android:contentDescription="patch"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/patch" />
 
@@ -310,7 +310,7 @@
         android:layout_alignTop="@+id/imageButton40"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
-        android:contentDescription="@string/patch"
+        android:contentDescription="patch"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/patch" />
 
@@ -323,7 +323,7 @@
         android:layout_alignTop="@+id/imageButton38"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
-        android:contentDescription="@string/patch"
+        android:contentDescription="patch"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/patch" />
 
@@ -336,7 +336,7 @@
         android:layout_toRightOf="@+id/imageButton43"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
-        android:contentDescription="@string/patch"
+        android:contentDescription="patch"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/patch" />
 
@@ -349,7 +349,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignRight="@+id/imageButton42"
         android:background="@android:color/transparent"
-        android:contentDescription="@string/arrow"
+        android:contentDescription="arrow"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/arrow" />
 
@@ -362,7 +362,7 @@
         android:layout_alignTop="@+id/imageButton32"
         android:layout_marginEnd="11dp"
         android:layout_marginRight="11dp"
-        android:contentDescription="@string/sign"
+        android:contentDescription="sign"
         android:fontFamily="@font/architects_daughter"
         android:text="BARN"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"

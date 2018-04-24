@@ -18,4 +18,8 @@
     <string name="market">MARKET</string>
     <string name="sheep">sheep</string>
     <string name="pane">pane</string>
+    <string name= "house">house</string>
+    <string name= "patch">patch</string>
+    <string name= "arrow">house</string>
+    <string name= "sign">house</string>
 </resources>
