@@ -16,7 +16,7 @@
         android:fontFamily="@font/architects_daughter"
         android:text="@string/market"
         android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@color/colorPrimary"
         android:textSize="60sp"
         android:typeface="serif" />
 
@@ -27,6 +27,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/textView"
+        android:layout_marginTop="19dp"
         android:adjustViewBounds="true"
         android:contentDescription="@string/pane"
         app:srcCompat="@drawable/inventory" />
@@ -239,5 +240,20 @@
         android:contentDescription="@string/sheep"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/sheep" />
+
+    <Button
+        android:id="@+id/buyButton"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/imageButton11"
+        android:layout_alignRight="@+id/imageButton11"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="41dp"
+        android:background="@drawable/inventorybackground"
+        android:fontFamily="@font/architects_daughter"
+        android:text="Buy"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:visibility="visible" />
 
 </RelativeLayout>
