@@ -6,8 +6,10 @@
         android:smallScreens="true"
         android:normalScreens="true"
         android:largeScreens= "true"
+        android:xlargeScreens="true"
         android:anyDensity="true"
         />
+
 
     <application
         android:allowBackup="true"
