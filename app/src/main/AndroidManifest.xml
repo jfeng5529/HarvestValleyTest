@@ -19,8 +19,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ChooseGenderScreen" />
+        <activity android:name=".ChooseGenderScreen"/>
         <activity android:name=".SoundScreen"></activity>
+        <!--<activity android:name=".ItemMenu" android:theme="@style/AppTheme.CustomTheme"> </activity> -->
+
     </application>
 
 </manifest>
