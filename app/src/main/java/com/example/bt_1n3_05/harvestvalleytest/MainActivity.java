@@ -14,6 +14,7 @@ import android.widget.ImageButton;
 public class MainActivity extends AppCompatActivity {
 
     private FloatingActionButton newButton;
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, ChooseGenderScreen.class);
         startActivity(intent);
     }
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
