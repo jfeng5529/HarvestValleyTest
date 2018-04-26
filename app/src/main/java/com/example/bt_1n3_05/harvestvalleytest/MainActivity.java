@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     private FloatingActionButton loadButton;
     private ImageButton musicButton;
     private ImageButton objectives;
+    private ImageButton house;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +47,14 @@ public class MainActivity extends AppCompatActivity {
                 openObjectivesScreen();
             }
         });
+
+        house = findViewById(R.id.house);
+        house.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openHouseScreen();
+            }
+        });
     }
 
     public void openChooseGenderScreen(){
@@ -60,6 +69,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void openObjectivesScreen(){
         Intent intent = new Intent(this, ObjectiveScreen.class);
+        startActivity(intent);
+    }
+
+    public void openHouseScreen(){
+        Intent intent = new Intent(this, HouseScreen.class);
         startActivity(intent);
     }
 

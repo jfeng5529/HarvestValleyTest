@@ -18,6 +18,10 @@
     <string name="market">MARKET</string>
     <string name="sheep">sheep</string>
     <string name="pane">pane</string>
+    <string name= "house">house</string>
+    <string name= "patch">patch</string>
+    <string name= "arrow">house</string>
+    <string name= "sign">house</string>
     <string name="fall_the_smell_of_mushroom">Fall (The Smell Of Mushroom)</string>
     <string name="spring_the_valley_comes_alive">Spring (The Valley Comes Alive)</string>
     <string name="spring_it_s_a_big_world_outside">Spring (It\'s A Big World Outside)</string>
