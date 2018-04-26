@@ -15,4 +15,6 @@
     <string name="girl">girl</string>
     <string name="objectives">OBJECTIVES</string>
     <string name="grow_your_crops_and_raise_your_animals_our_game_leads_you_through_an_enjoyable_farming_experience_with_wide_variety_of_crops_animals_and_merchandise_the_main_menu_provides_the_player_with_four_options_create_new_game_load_existing_game_directions_on_how_to_play_exit_menu">Grow your crops and raise your animals!!! Our game leads you through an enjoyable farming experience with wide variety of crops, animals, and merchandise. The main menu provides the player with four options. Create new game, Load existing game, Directions on how to play, Exit menu.</string>
+    <string name="newbutton">newButton</string>
+    <string name="loadbutton">loadButton</string>
 </resources>

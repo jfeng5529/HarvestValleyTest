@@ -13,15 +13,15 @@ import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
 
-    private FloatingActionButton newButton;
-    private FloatingActionButton loadButton;
+    private ImageButton newButton;
+    private ImageButton loadButton;
     private ImageButton musicButton;
     private ImageButton objectives;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.content_main);
 
         newButton = findViewById(R.id.newButton);
         newButton.setOnClickListener(new View.OnClickListener() {
