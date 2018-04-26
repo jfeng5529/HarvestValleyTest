@@ -18,6 +18,8 @@ public class MainActivity extends AppCompatActivity {
     private ImageButton musicButton;
     private ImageButton objectives;
     private ImageButton house;
+    private ImageButton girlButton;
+    private ImageButton boyButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +50,22 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        girlButton = findViewById(R.id.girlButton);
+        girlButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openFarmScreen();
+            }
+        });
+
+        boyButton = findViewById(R.id.boyButton);
+        boyButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openFarmScreen();
+            }
+        });
+
         house = findViewById(R.id.house);
         house.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -69,6 +87,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void openObjectivesScreen(){
         Intent intent = new Intent(this, ObjectiveScreen.class);
+        startActivity(intent);
+    }
+
+    public void openFarmScreen(){
+        Intent intent = new Intent(this, FarmScreen.class);
         startActivity(intent);
     }
 

@@ -333,7 +333,7 @@
         android:layout_marginEnd="11dp"
         android:contentDescription="@string/sign"
         android:fontFamily="@font/architects_daughter"
-        android:text="@string/BARN"
+        android:text="BARN"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@android:color/background_light"
         android:textSize="28sp" />
