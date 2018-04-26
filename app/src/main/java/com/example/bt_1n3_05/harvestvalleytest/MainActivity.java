@@ -14,20 +14,38 @@ import android.widget.ImageButton;
 public class MainActivity extends AppCompatActivity {
 
     private FloatingActionButton newButton;
-    
+    private FloatingActionButton loadButton;
+    private ImageButton musicButton;
+    private ImageButton objectives;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-       newButton = (FloatingActionButton) findViewById(R.id.newButton);
-       newButton.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View v) {
-               //
-               openChooseGenderScreen();
-           }
-       });
+        newButton = findViewById(R.id.newButton);
+        newButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openChooseGenderScreen();
+            }
+        });
+
+        musicButton = findViewById(R.id.musicButton);
+        musicButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openSoundScreen();
+            }
+        });
+
+        objectives = findViewById(R.id.objectives);
+        objectives.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openObjectivesScreen();
+            }
+        });
     }
 
     public void openChooseGenderScreen(){
@@ -35,7 +53,15 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void openSoundScreen(){
+        Intent intent = new Intent(this, SoundScreen.class);
+        startActivity(intent);
+    }
 
+    public void openObjectivesScreen(){
+        Intent intent = new Intent(this, ObjectiveScreen.class);
+        startActivity(intent);
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
