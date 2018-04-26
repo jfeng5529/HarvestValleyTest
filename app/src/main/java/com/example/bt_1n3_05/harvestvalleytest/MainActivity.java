@@ -9,6 +9,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
@@ -27,6 +28,19 @@ public class MainActivity extends AppCompatActivity {
                openChooseGenderScreen();
            }
        });
+
+        Button test = (Button) findViewById(R.id.testB);
+        test.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openInventoryScreen();
+            }
+        });
+    }
+
+    private void openInventoryScreen() {
+        Intent intent = new Intent(this, InventoryScreen.class);
+        startActivity(intent);
     }
 
     public void openChooseGenderScreen(){

@@ -8,6 +8,7 @@ import android.view.View;
 import com.example.bt_1n3_05.harvestvalleytest.R;
 
 public class InventoryScreen extends AppCompatActivity {
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.inventory);
