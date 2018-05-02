@@ -1,6 +1,7 @@
 package com.example.bt_1n3_05.harvestvalleytest;
 
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -13,8 +14,8 @@ import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
 
-    private FloatingActionButton newButton;
-    private FloatingActionButton loadButton;
+    private ImageButton newButton;
+    private ImageButton loadButton;
     private ImageButton musicButton;
     private ImageButton objectives;
     private ImageButton house;
@@ -51,28 +52,28 @@ public class MainActivity extends AppCompatActivity {
         });
 
         girlButton = findViewById(R.id.girlButton);
-        girlButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openFarmScreen();
-            }
-        });
+//        girlButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+////                openFarmScreen();
+//            }
+//        });
 
         boyButton = findViewById(R.id.boyButton);
-        boyButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openFarmScreen();
-            }
-        });
+//        boyButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+////                openFarmScreen();
+//            }
+//        });
 
-        house = findViewById(R.id.house);
-        house.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openHouseScreen();
-            }
-        });
+//        house = findViewById(R.id.house);
+//        house.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                openHouseScreen();
+//            }
+//        });
     }
 
     public void openChooseGenderScreen(){
@@ -94,11 +95,11 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, FarmScreen.class);
         startActivity(intent);
     }
-
-    public void openHouseScreen(){
-        Intent intent = new Intent(this, HouseScreen.class);
-        startActivity(intent);
-    }
+//
+//    public void openHouseScreen(){
+//        Intent intent = new Intent(this, HouseScreen.class);
+//        startActivity(intent);
+//    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
