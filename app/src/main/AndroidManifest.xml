@@ -29,7 +29,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".ChooseGenderScreen" />
-        <activity android:name=".SoundScreen"></activity>
+        <activity android:name=".SoundScreen"/>
+        <activity android:name=".ObjectiveScreen"/>
+        <activity android:name=".FarmScreen"></activity>
     </application>
 
 </manifest>
