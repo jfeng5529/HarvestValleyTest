@@ -20,6 +20,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".ChooseGenderScreen"/>
+        <activity android:name=".InventoryScreen"/>
         <activity android:name=".SoundScreen"></activity>
         <!--<activity android:name=".ItemMenu" android:theme="@style/AppTheme.CustomTheme"> </activity> -->
 

@@ -118,6 +118,7 @@
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
         android:contentDescription="@string/tomato"
+        android:onClick="onClickItem"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/tomatoseeds" />
 
