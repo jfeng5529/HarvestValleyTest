@@ -49,7 +49,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
+        loadButton = findViewById(R.id.loadButton);
+        loadButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openFarmScreen();
+            }
+        });
 //        house = findViewById(R.id.house);
 //        house.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -74,6 +80,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void openFarmScreen(){
+        Intent intent = new Intent(this, FarmScreen.class);
+        startActivity(intent);
+    }
 //
 //    public void openHouseScreen(){
 //        Intent intent = new Intent(this, HouseScreen.class);
