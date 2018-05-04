@@ -1,6 +1,27 @@
 <resources>
     <string name="app_name">HarvestValleyTest</string>
     <string name="action_settings">Settings</string>
+    <string name="potato">potato</string>
+    <string name="pepper">pepper</string>
+    <string name="garlic">garlic</string>
+    <string name="corn">corn</string>
+    <string name="strawberry">strawberry</string>
+    <string name="tomato">tomato</string>
+    <string name="wheat">wheat</string>
+    <string name="blackchicken">blackchicken</string>
+    <string name="whitechicken">whitechicken</string>
+    <string name="cow">cow</string>
+    <string name="duck">duck</string>
+    <string name="rabbit">rabbit</string>
+    <string name="pig">pig</string>
+    <string name="brownchicken">brownchicken</string>
+    <string name="market">MARKET</string>
+    <string name="sheep">sheep</string>
+    <string name="pane">pane</string>
+    <string name= "house">house</string>
+    <string name= "patch">patch</string>
+    <string name= "arrow">house</string>
+    <string name= "sign">house</string>
     <string name="fall_the_smell_of_mushroom">Fall (The Smell Of Mushroom)</string>
     <string name="spring_the_valley_comes_alive">Spring (The Valley Comes Alive)</string>
     <string name="spring_it_s_a_big_world_outside">Spring (It\'s A Big World Outside)</string>
@@ -15,6 +36,5 @@
     <string name="girl">girl</string>
     <string name="objectives">OBJECTIVES</string>
     <string name="grow_your_crops_and_raise_your_animals_our_game_leads_you_through_an_enjoyable_farming_experience_with_wide_variety_of_crops_animals_and_merchandise_the_main_menu_provides_the_player_with_four_options_create_new_game_load_existing_game_directions_on_how_to_play_exit_menu">Grow your crops and raise your animals!!! Our game leads you through an enjoyable farming experience with wide variety of crops, animals, and merchandise. The main menu provides the player with four options. Create new game, Load existing game, Directions on how to play, Exit menu.</string>
-    <string name="newbutton">newButton</string>
-    <string name="loadbutton">loadButton</string>
+    <string name="barn">BARN</string>
 </resources>

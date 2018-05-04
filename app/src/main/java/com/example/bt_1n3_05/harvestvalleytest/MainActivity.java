@@ -1,6 +1,7 @@
 package com.example.bt_1n3_05.harvestvalleytest;
 
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -17,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     private ImageButton loadButton;
     private ImageButton musicButton;
     private ImageButton objectives;
+    private ImageButton house;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,11 +27,11 @@ public class MainActivity extends AppCompatActivity {
 
         newButton = findViewById(R.id.newButton);
         newButton.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View v) {
-               openChooseGenderScreen();
-           }
-       });
+            @Override
+            public void onClick(View v) {
+                openChooseGenderScreen();
+            }
+        });
 
         musicButton = findViewById(R.id.musicButton);
         musicButton.setOnClickListener(new View.OnClickListener() {
@@ -46,6 +48,15 @@ public class MainActivity extends AppCompatActivity {
                 openObjectivesScreen();
             }
         });
+
+
+//        house = findViewById(R.id.house);
+//        house.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                openHouseScreen();
+//            }
+//        });
     }
 
     public void openChooseGenderScreen(){
@@ -62,6 +73,12 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, ObjectiveScreen.class);
         startActivity(intent);
     }
+
+//
+//    public void openHouseScreen(){
+//        Intent intent = new Intent(this, HouseScreen.class);
+//        startActivity(intent);
+//    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
