@@ -8,7 +8,7 @@ import android.util.DisplayMetrics;
  * Created by BT_1N3_03 on 4/25/2018.
  */
 
-class ItemMenu extends Activity{
+public class ItemMenu extends Activity{
 
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
