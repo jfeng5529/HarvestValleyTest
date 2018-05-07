@@ -5,10 +5,27 @@ import android.os.Bundle;
 
 public class SoundScreen extends AppCompatActivity {
 
+    MediaPlayer mySong;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sound_screen);
+//        mySong = MediaPlayer.create(SoundScreen.this, R.raw.sound);
+//        mySong.start();
+//        Thread thread = new Thread(){
+//          public void run(){
+//              try{
+//                  sleep(1000);
+//              }catch (Exception e){
+//
+//              }finally {
+//                  Intent i = new Intent (SoundScreen.this.FirstActivity.class);
+//                  startActivity(i);
+//              }
+//          }
+//        };
+
     }
 }
 

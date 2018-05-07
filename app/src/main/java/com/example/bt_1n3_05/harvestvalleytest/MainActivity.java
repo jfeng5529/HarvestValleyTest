@@ -14,6 +14,8 @@ import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
 
+//    public  MediaPlayer mySong;
+
     private ImageButton newButton;
     private ImageButton loadButton;
     private ImageButton musicButton;
@@ -24,6 +26,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.content_main);
+//
+//        mySong = MediaPlayer.create(MainActivity.this,R.raw.sound);
+//        mySong.start();
+//        Thread thread = new Thread(){
+//
+//        };
 
         newButton = findViewById(R.id.newButton);
         newButton.setOnClickListener(new View.OnClickListener() {
