@@ -16,5 +16,6 @@ public class InventoryScreen extends AppCompatActivity {
 
     public void onClickItem(View v){
         startActivity(new Intent(InventoryScreen.this, ItemMenu.class));
+
     }
 }
