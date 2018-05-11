@@ -31,8 +31,8 @@
         <activity android:name=".ChooseGenderScreen"/>
         <activity android:name=".SoundScreen" />
         <activity android:name=".ObjectiveScreen"/>
-        <activity android:name=".FarmScreen"
-            ></activity>
+        <activity android:name=".FarmScreen" />
+        <activity android:name=".InventoryScreen" />
     </application>
 
 </manifest>
