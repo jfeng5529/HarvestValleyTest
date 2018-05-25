@@ -39,4 +39,6 @@
     <string name="barn">BARN</string>
     <string name="newbutton">newButton</string>
     <string name="loadbutton">loadButton</string>
+    <string name="buy">Buy</string>
+    <string name="test">test</string>
 </resources>
