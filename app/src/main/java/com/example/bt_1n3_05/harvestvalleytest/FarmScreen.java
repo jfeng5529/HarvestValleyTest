@@ -24,16 +24,16 @@ import java.io.InputStream;
 public class FarmScreen extends AppCompatActivity {
 
     private Button market;
-    //28 by 34
-    private static final int FRAME_W = 28;
-    private static final int FRAME_H = 34;
-    private static final int NB_FRAMES = 35;
-    private static final int COUNT_X = 4;
-    private static final int COUNT_Y = 9;
-    private static final int FRAME_DURATION = 120;
-    private static final int SCALE_FACTOR = 4;
-    private ImageView dog;
-    private Bitmap[] bmps;
+//    //28 by 34
+//    private static final int FRAME_W = 28;
+//    private static final int FRAME_H = 34;
+//    private static final int NB_FRAMES = 35;
+//    private static final int COUNT_X = 4;
+//    private static final int COUNT_Y = 9;
+//    private static final int FRAME_DURATION = 120;
+//    private static final int SCALE_FACTOR = 4;
+//    private ImageView dog;
+//    private Bitmap[] bmps;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,84 +47,85 @@ public class FarmScreen extends AppCompatActivity {
                 openMarketScreen();
             }
         });
-
-        dog = (ImageView) findViewById(R.id.dog);
-
-        Bitmap dogBmp = getBitmap(this, "doggie.png");
-
-        if(dogBmp != null){
-            bmps = new Bitmap[NB_FRAMES];
-            int currentFrame = 0;
-
-            for(int i = 0; i< COUNT_Y; i++){
-                for(int j = 0; j <  COUNT_X; j++ ){
-                    bmps[currentFrame] = Bitmap.createBitmap(dogBmp, FRAME_W +j
-                            , FRAME_W + i, FRAME_W,FRAME_H);
-
-                    bmps[currentFrame] = Bitmap.createScaledBitmap(bmps[currentFrame], FRAME_W * SCALE_FACTOR,
-                            FRAME_H * SCALE_FACTOR, true);
-
-                    if(++currentFrame >= NB_FRAMES){
-                        break;
-                    }
-                }
-            }
-
-            final AnimationDrawable animation = new AnimationDrawable();
-            animation.setOneShot(false);
-
-            for(int i= 0; i< NB_FRAMES; i++){
-                animation.addFrame(new BitmapDrawable(getResources(),bmps[i]),FRAME_DURATION);
-            }
-
-            if(Build.VERSION.SDK_INT <16){
-                dog.setBackgroundDrawable(animation);
-            }
-            else{
-                dog.setBackground(animation);
-            }
-
-            dog.post(new Runnable() {
-
-                @Override
-                public void run() {
-                    animation.start();
-                }
-            });
-
-
-        }
     }
-
-
     public void openMarketScreen(){
         Intent intent = new Intent(this, InventoryScreen.class);
         startActivity(intent);
     }
+//        dog = (ImageView) findViewById(R.id.dog);
+//
+//        Bitmap dogBmp = getBitmap(this, "doggie.png");
+//
+//        if(dogBmp != null){
+//            bmps = new Bitmap[NB_FRAMES];
+//            int currentFrame = 0;
+//
+//            for(int i = 0; i< COUNT_Y; i++){
+//                for(int j = 0; j <  COUNT_X; j++ ){
+//                    bmps[currentFrame] = Bitmap.createBitmap(dogBmp, FRAME_W +j
+//                            , FRAME_W + i, FRAME_W,FRAME_H);
+//
+//                    bmps[currentFrame] = Bitmap.createScaledBitmap(bmps[currentFrame], FRAME_W * SCALE_FACTOR,
+//                            FRAME_H * SCALE_FACTOR, true);
+//
+//                    if(++currentFrame >= NB_FRAMES){
+//                        break;
+//                    }
+//                }
+//            }
+//
+//            final AnimationDrawable animation = new AnimationDrawable();
+//            animation.setOneShot(false);
+//
+//            for(int i= 0; i< NB_FRAMES; i++){
+//                animation.addFrame(new BitmapDrawable(getResources(),bmps[i]),FRAME_DURATION);
+//            }
+//
+//            if(Build.VERSION.SDK_INT <16){
+//                dog.setBackgroundDrawable(animation);
+//            }
+//            else{
+//                dog.setBackground(animation);
+//            }
+//
+//            dog.post(new Runnable() {
+//
+//                @Override
+//                public void run() {
+//                    animation.start();
+//                }
+//            });
+//
+//
+//        }
+//    }
+//
+//
 
-
-    private Bitmap getBitmap(FarmScreen farmScreen, String filepath) {
-        AssetManager assetManager = farmScreen.getAssets();
-        InputStream intr = null;
-        Bitmap bitmap = null;
-
-        try{
-            intr = assetManager.open(filepath);
-            bitmap = BitmapFactory.decodeStream(intr);
-        }
-        catch(IOException ioe){
-    } finally {
-        if(intr != null) {
-            try{
-                intr.close();
-            }
-            catch(IOException ioe){
-            }
-        }
-    }
-    return bitmap;
+//
+//
+//    private Bitmap getBitmap(FarmScreen farmScreen, String filepath) {
+//        AssetManager assetManager = farmScreen.getAssets();
+//        InputStream intr = null;
+//        Bitmap bitmap = null;
+//
+//        try{
+//            intr = assetManager.open(filepath);
+//            bitmap = BitmapFactory.decodeStream(intr);
+//        }
+//        catch(IOException ioe){
+//    } finally {
+//        if(intr != null) {
+//            try{
+//                intr.close();
+//            }
+//            catch(IOException ioe){
+//            }
+//        }
+//    }
+//    return bitmap;
 }
-}
+
 
 
 
