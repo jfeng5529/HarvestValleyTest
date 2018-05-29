@@ -85,7 +85,6 @@ public class FarmScreen extends AppCompatActivity {
 //         }
 
 
-
 //         }
 
 //     private Bitmap getBitmap(FarmScreen farmScreen, String filepath) {
@@ -111,5 +110,5 @@ public class FarmScreen extends AppCompatActivity {
 // }
 // }
 
-
-
+    }
+}
