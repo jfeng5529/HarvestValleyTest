@@ -11,6 +11,7 @@ public class SoundScreen extends AppCompatActivity {
         setContentView(R.layout.activity_sound_screen);
     }
 }
+// Consider deleting
 
 //package com.example.bt_1n3_05.harvestvalleytest;
 //

@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
     private ImageButton newButton;
     private ImageButton loadButton;
-    private ImageButton musicButton;
+ //   private ImageButton musicButton;
     private ImageButton objectives;
     private ImageButton house;
 
@@ -33,13 +33,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        musicButton = findViewById(R.id.musicButton);
-        musicButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openSoundScreen();
-            }
-        });
+//        musicButton = findViewById(R.id.musicButton);
+//        musicButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                openSoundScreen();
+//            }
+//        });
 
         objectives = findViewById(R.id.objectives);
         objectives.setOnClickListener(new View.OnClickListener() {
@@ -64,10 +64,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void openSoundScreen(){
-        Intent intent = new Intent(this, SoundScreen.class);
-        startActivity(intent);
-    }
+//    public void openSoundScreen(){
+//        Intent intent = new Intent(this, SoundScreen.class);
+//        startActivity(intent);
+//    }
 
     public void openObjectivesScreen(){
         Intent intent = new Intent(this, ObjectiveScreen.class);
