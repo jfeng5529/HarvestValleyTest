@@ -10,14 +10,14 @@ public abstract class CharacterMovement {
 
     private Bitmap image;
 
-    private final int rowCount;
-    private final int colCount;
-    private final int WIDTH;
-    private final int HEIGHT;
-    private final int width;
-    private final int height;
-    private int x;
-    private int y;
+    public final int rowCount;
+    public final int colCount;
+    public final int WIDTH;
+    public final int HEIGHT;
+    public final int width;
+    public final int height;
+    public int x;
+    public int y;
 
     public CharacterMovement(Bitmap image, int rowCount, int colCount, int x, int y){
         this.image = image;

@@ -1,8 +1,12 @@
 package com.example.bt_1n3_05.harvestvalleytest;
 
+import android.content.ComponentName;
+import android.content.Context;
 import android.content.Intent;
+import android.content.ServiceConnection;
 import android.media.Image;
 import android.os.Bundle;
+import android.os.IBinder;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -16,9 +20,12 @@ public class MainActivity extends AppCompatActivity {
 
     private ImageButton newButton;
     private ImageButton loadButton;
- //   private ImageButton musicButton;
+    //   private ImageButton musicButton;
     private ImageButton objectives;
     private ImageButton house;
+   // private ServiceConnection Scon;
+  //  private boolean mIsBound;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,7 +64,36 @@ public class MainActivity extends AppCompatActivity {
 //                openHouseScreen();
 //            }
 //        });
-    }
+//        boolean mIsBound = false;
+//        final MusicService[] mServ = new MusicService[1];
+//        ServiceConnection Scon;
+//        Scon = new ServiceConnection(){
+//
+//            public void onServiceConnected(ComponentName name, IBinder
+//                    binder) {
+//                mServ[0] = ((MusicService.ServiceBinderbinder).getService());
+//            }
+//
+//            public void onServiceDisconnected(ComponentName name) {
+//                mServ[0] = null;
+//            }
+//        };
+//    }
+//
+//    void doBindService(){
+//        bindService(new Intent(this,MusicService.class),
+//                Scon, Context.BIND_AUTO_CREATE);
+//        mIsBound = true;
+//    }
+//
+//    void doUnbindService()
+//    {
+//        if(mIsBound)
+//        {
+//            unbindService(Scon);
+//            mIsBound = false;
+//        }
+  }
 
     public void openChooseGenderScreen(){
         Intent intent = new Intent(this, ChooseGenderScreen.class);
@@ -99,7 +135,8 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
 
-        return super.onOptionsItemSelected(item);
+        if (super.onOptionsItemSelected(item)) return true;
+        else return false;
     }
 }
 
