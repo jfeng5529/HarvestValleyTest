@@ -8,7 +8,7 @@ import android.graphics.Bitmap;
 
 public abstract class CharacterMovement {
 
-    private Bitmap image;
+    public Bitmap image;
 
     public final int rowCount;
     public final int colCount;
