@@ -19,7 +19,7 @@ public class ItemMenu extends Activity{
         getWindowManager().getDefaultDisplay().getMetrics(dm);
         int width = dm.widthPixels;
         int height = dm.heightPixels;
-        getWindow().setLayout( (int)(width*.8),(int)(height*.35));
+        getWindow().setLayout( (int)(width*.5),(int)(height*.3));
        // ItemMenu.showAtLocation(dm, Gravity.TOP|Gravity.LEFT, location.left, location.bottom);
     }
 }

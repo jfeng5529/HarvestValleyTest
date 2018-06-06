@@ -1,19 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffd0e1"
     tools:background="#ffd0e1">
 
+    <ImageView
+        android:id="@+id/ItemImage"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ItemName"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/corn"
+        android:scaleType="fitCenter"
+        android:src="@drawable/cornseeds" />
+
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/ItemName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="98dp"
+        android:layout_marginTop="16dp"
         android:text="@string/test"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/ItemDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ItemImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="@string/corn_corn_corn" />
+
+    <TextView
+        android:id="@+id/ItemPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ItemDescription"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:text="@string/cost" />
+
 </RelativeLayout>
