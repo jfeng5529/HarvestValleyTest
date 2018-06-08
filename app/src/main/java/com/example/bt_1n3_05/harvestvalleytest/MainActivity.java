@@ -3,6 +3,7 @@ package com.example.bt_1n3_05.harvestvalleytest;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
+import android.content.ServiceConnection;
 import android.media.Image;
 import android.os.Bundle;
 import android.os.IBinder;
@@ -13,38 +14,39 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Button;
 import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
 
     private ImageButton newButton;
     private ImageButton loadButton;
-    private ImageButton musicButton;
+    //   private ImageButton musicButton;
     private ImageButton objectives;
     private ImageButton house;
+    // private ServiceConnection Scon;
+    //  private boolean mIsBound;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-       newButton = (FloatingActionButton) findViewById(R.id.newButton);
-       newButton.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View v) {
-               //
-               openChooseGenderScreen();
-           }
-       });
-
-        musicButton = findViewById(R.id.musicButton);
-        musicButton.setOnClickListener(new View.OnClickListener() {
+        newButton = findViewById(R.id.newButton);
+        newButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openSoundScreen();
+                openChooseGenderScreen();
             }
         });
+
+//        musicButton = findViewById(R.id.musicButton);
+//        musicButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                openSoundScreen();
+//            }
+//        });
 
         objectives = findViewById(R.id.objectives);
         objectives.setOnClickListener(new View.OnClickListener() {
@@ -54,9 +56,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-    public void openInventoryScreen() {
-        Intent intent = new Intent(this, InventoryScreen.class);
-        startActivity(intent);
+
+//        house = findViewById(R.id.house);
+//        house.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                openHouseScreen();
+//            }
+//        });
 //        boolean mIsBound = false;
 //        final MusicService[] mServ = new MusicService[1];
 //        ServiceConnection Scon;
@@ -86,17 +93,17 @@ public class MainActivity extends AppCompatActivity {
 //            unbindService(Scon);
 //            mIsBound = false;
 //        }
-  }
+    }
 
     public void openChooseGenderScreen(){
         Intent intent = new Intent(this, ChooseGenderScreen.class);
         startActivity(intent);
     }
 
-    public void openSoundScreen(){
-        Intent intent = new Intent(this, SoundScreen.class);
-        startActivity(intent);
-    }
+//    public void openSoundScreen(){
+//        Intent intent = new Intent(this, SoundScreen.class);
+//        startActivity(intent);
+//    }
 
     public void openObjectivesScreen(){
         Intent intent = new Intent(this, ObjectiveScreen.class);
@@ -132,4 +139,3 @@ public class MainActivity extends AppCompatActivity {
         else return false;
     }
 }
-
