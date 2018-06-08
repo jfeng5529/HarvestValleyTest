@@ -1,15 +1,11 @@
 package com.example.bt_1n3_05.harvestvalleytest;
 
 import android.content.Intent;
-import android.media.Image;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
@@ -26,12 +22,17 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.content_main);
-//
-//        mySong = MediaPlayer.create(MainActivity.this,R.raw.sound);
-//        mySong.start();
-//        Thread thread = new Thread(){
-//
-//        };
+        
+        MediaPlayer mPlayer;
+        mPlayer = MediaPlayer.create(this, R.raw.sound);
+/*
+
+mySong = MediaPlayer.create(MainActivity.this,R.raw.sound);
+mySong.start();
+Thread thread = new Thread(){
+
+};
+*/
 
         newButton = findViewById(R.id.newButton);
         newButton.setOnClickListener(new View.OnClickListener() {

@@ -5,4 +5,6 @@ import android.media.VolumeAutomation;
 
 public abstract class MediaPlayer extends Object implements VolumeAutomation,AudioRouting{
 
+//    public static MediaPlayer create(MainActivity mainActivity, int sound) {
+//    }
 }
