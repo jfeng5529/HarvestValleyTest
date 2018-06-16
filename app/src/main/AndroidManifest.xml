@@ -31,6 +31,7 @@
         <activity android:name=".SoundScreen" />
         <activity android:name=".InventoryScreen" />
         <activity android:name=".ObjectiveScreen"/>
+        <activity android:name=".Item"/>
         <activity android:name=".ItemMenu" android:theme="@style/AppTheme.CustomTheme"/>
         <activity android:name=".FarmScreen"
             ></activity>
