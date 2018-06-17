@@ -24,5 +24,14 @@ public class Item extends Activity {
         this.selected = false;
         this.added = false;
         this.time = time;
+
 } public Item() {}
+
+    public boolean isSelected(){
+        return selected;
+    }
+
+    public void setSelected(boolean b){
+        selected = b;
+    }
 }
