@@ -14,7 +14,7 @@
         android:layout_marginTop="39dp"
         android:contentDescription=""
         android:fontFamily="@font/architects_daughter"
-        android:text="TextView"
+        android:text="@string/seed"
         android:textAppearance="@style/TextAppearance.AppCompat.Title"
         android:textColor="@color/colorAccent"
         android:textSize="60sp"
@@ -23,65 +23,68 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="400dp"
-        android:layout_height="300dp"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView5"
-        android:layout_marginTop="29dp"
+        android:layout_width="324dp"
+        android:layout_height="250dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="131dp"
         android:adjustViewBounds="true"
+        android:contentDescription="TODO"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/seedpane" />
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="64dp"
+        android:layout_height="69dp"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="243dp"
-        android:layout_toStartOf="@+id/textView5"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="226dp"
+        android:contentDescription="TODO"
         app:srcCompat="@drawable/cornseeds" />
 
     <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="251dp"
-        app:srcCompat="@drawable/garlicseeds" />
-
-    <ImageView
         android:id="@+id/imageView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/imageView6"
-        android:layout_marginEnd="62dp"
-        app:srcCompat="@drawable/pepperseeds" />
+        android:layout_width="64dp"
+        android:layout_height="69dp"
+        android:layout_alignTop="@+id/imageView5"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/pepperseeds"
+        android:contentDescription="TODO" />
 
     <ImageView
         android:id="@+id/imageView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="169dp"
-        android:layout_toStartOf="@+id/textView5"
+        android:layout_width="64dp"
+        android:layout_height="69dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/imageView5"
+        android:layout_marginEnd="70dp"
+        android:contentDescription="TODO"
         app:srcCompat="@drawable/potatoseeds" />
 
     <ImageView
         android:id="@+id/imageView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/imageView8"
-        android:layout_centerHorizontal="true"
+        android:layout_width="64dp"
+        android:layout_height="69dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/imageView5"
+        android:layout_marginBottom="170dp"
         app:srcCompat="@drawable/strawberryseeds" />
 
     <ImageView
         android:id="@+id/imageView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="177dp"
-        android:layout_toEndOf="@+id/textView5"
+        android:layout_width="64dp"
+        android:layout_height="69dp"
+        android:layout_alignTop="@+id/imageView9"
+        android:layout_centerHorizontal="true"
         app:srcCompat="@drawable/tomatoseeds" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="64dp"
+        android:layout_height="69dp"
+        android:layout_alignStart="@+id/imageView8"
+        android:layout_alignTop="@+id/imageView9"
+        app:srcCompat="@drawable/wheatseeds" />
 </RelativeLayout>
