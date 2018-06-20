@@ -7,14 +7,20 @@ import android.graphics.drawable.AnimationDrawable;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
+import android.support.v4.content.res.FontResourcesParserCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.ImageSwitcher;
 import android.widget.ImageView;
 
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.TimerTask;
 
-import pl.droidsonroids.gif.GifImageView;
 
 /**
  * Created by BT_1N3_05 on 4/13/2018.
@@ -32,11 +38,11 @@ public class FarmScreen extends AppCompatActivity {
 //     private ImageView dog;
 //     private Bitmap[] bmps;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.farm);
+
 //         dog = (ImageView) findViewById(R.id.dog);
 
 //         Bitmap dogBmp = getBitmap(this, "doggie.png");
@@ -111,4 +117,36 @@ public class FarmScreen extends AppCompatActivity {
 // }
 
     }
-}
+    public void plantCrop(View v) {
+       // final int id = v.getId();
+       // switch (id) {
+            final int []imageArray={R.drawable.cornst1,R.drawable.cornst2,R.drawable.cornst3,R.drawable.cornst4,R.drawable.cornst5,R.drawable.cornst6};
+
+
+            final Handler handler = new Handler();
+            Runnable runnable = new Runnable() {
+                int i=0;
+                public void run() {
+                    ImageView img = (ImageView) findViewById(R.id.imageButton16);
+                    img.setImageResource(imageArray[i]);
+                    i++;
+                    if(i>imageArray.length-1)
+                    {
+                        i=0;
+                    }
+                    handler.postDelayed(this, 50);  //for interval...
+                }
+            };
+            handler.postDelayed(runnable, 2000); //for initial delay..
+        }
+        }
+
+
+        /**switch (id) {
+            case R.id.button1:
+                // your code for button1 here
+                break;
+            case R.id.button2:
+                // your code for button2 here
+                break;
+            // even more buttons here**/
