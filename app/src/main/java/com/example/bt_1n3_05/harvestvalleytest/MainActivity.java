@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
 import android.media.Image;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.support.design.widget.FloatingActionButton;
@@ -26,11 +27,15 @@ public class MainActivity extends AppCompatActivity {
     // private ServiceConnection Scon;
     //  private boolean mIsBound;
 
+    MediaPlayer song;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        MediaPlayer sound = MediaPlayer.create(MainActivity.this,R.raw.sound);
+        sound.start();
 
         newButton = findViewById(R.id.newButton);
         newButton.setOnClickListener(new View.OnClickListener() {

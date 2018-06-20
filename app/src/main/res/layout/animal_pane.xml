@@ -34,18 +34,18 @@
 
     <ImageButton
         android:id="@+id/imageButton30"
-        android:layout_width="40dp"
-        android:layout_height="30dp"
+        android:layout_width="51dp"
+        android:layout_height="55dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="218dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="214dp"
         app:srcCompat="@drawable/blackchicken" />
 
     <ImageButton
         android:id="@+id/imageButton31"
-        android:layout_width="40dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
         android:layout_alignParentStart="true"
         android:layout_alignTop="@+id/imageButton30"
         android:layout_marginStart="79dp"
@@ -53,29 +53,29 @@
 
     <ImageButton
         android:id="@+id/imageButton33"
-        android:layout_width="40dp"
-        android:layout_height="45dp"
+        android:layout_width="54dp"
+        android:layout_height="56dp"
         android:layout_alignParentStart="true"
         android:layout_alignTop="@+id/imageButton30"
-        android:layout_marginStart="143dp"
+        android:layout_marginStart="129dp"
         app:srcCompat="@drawable/whitechicken" />
 
     <ImageButton
         android:id="@+id/imageButton34"
-        android:layout_width="40dp"
-        android:layout_height="30dp"
+        android:layout_width="76dp"
+        android:layout_height="54dp"
         android:layout_alignParentEnd="true"
         android:layout_alignTop="@+id/imageButton30"
-        android:layout_marginEnd="148dp"
+        android:layout_marginEnd="132dp"
         app:srcCompat="@drawable/cow" />
 
     <ImageButton
         android:id="@+id/imageButton35"
         android:layout_width="40dp"
         android:layout_height="30dp"
+        android:layout_alignBottom="@+id/imageButton30"
         android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/imageButton30"
-        android:layout_marginEnd="76dp"
+        android:layout_marginEnd="85dp"
         app:srcCompat="@drawable/duck" />
 
     <ImageButton
@@ -91,9 +91,9 @@
         android:id="@+id/imageButton47"
         android:layout_width="40dp"
         android:layout_height="30dp"
+        android:layout_alignBottom="@+id/imageButton30"
         android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/imageButton30"
-        android:layout_marginEnd="18dp"
+        android:layout_marginEnd="23dp"
         app:srcCompat="@drawable/pig" />
 
     <ImageButton
