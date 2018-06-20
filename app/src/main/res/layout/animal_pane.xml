@@ -21,16 +21,16 @@
         android:textSize="60sp"
         tools:text="Animals" />
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="400dp"
-        android:layout_height="300dp"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView5"
-        android:layout_marginTop="29dp"
-        android:adjustViewBounds="true"
-        android:scaleType="fitCenter"
-        app:srcCompat="@drawable/animalpane" />
+    <!--<ImageView-->
+        <!--android:id="@+id/imageView4"-->
+        <!--android:layout_width="400dp"-->
+        <!--android:layout_height="300dp"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_below="@+id/textView5"-->
+        <!--android:layout_marginTop="29dp"-->
+        <!--android:adjustViewBounds="true"-->
+        <!--android:scaleType="fitCenter"-->
+        <!--app:srcCompat="@drawable/animalpane" />-->
 
     <ImageButton
         android:id="@+id/imageButton30"

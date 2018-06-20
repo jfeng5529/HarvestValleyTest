@@ -30,7 +30,7 @@
         android:layout_centerVertical="true"
         android:adjustViewBounds="true"
         android:contentDescription="@string/pane"
-        app:srcCompat="@drawable/inventory" />
+        app:srcCompat = "@drawable/inventory" />
 
     <ImageButton
         android:id="@+id/imageButton"

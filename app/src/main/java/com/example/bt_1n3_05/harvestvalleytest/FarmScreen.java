@@ -14,6 +14,8 @@ import android.view.View;
 import android.widget.ImageSwitcher;
 import android.widget.ImageView;
 
+import android.widget.ImageButton;
+
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -127,7 +129,7 @@ public class FarmScreen extends AppCompatActivity {
             Runnable runnable = new Runnable() {
                 int i=0;
                 public void run() {
-                    ImageView img = (ImageView) findViewById(R.id.imageButton16);
+                    ImageButton img = (ImageButton) findViewById(R.id.imageButton16);
                     img.setImageResource(imageArray[i]);
                     i++;
                     if(i>imageArray.length-1)
