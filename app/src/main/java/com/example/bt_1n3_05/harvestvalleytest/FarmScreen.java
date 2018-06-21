@@ -126,7 +126,8 @@ public class FarmScreen extends AppCompatActivity {
                 R.drawable.tomatost1,R.drawable.tomatost2,R.drawable.tomatost3,R.drawable.tomatost4,R.drawable.tomatost5,R.drawable.tomatost6,
                 R.drawable.wheatst1,R.drawable.wheatst2,R.drawable.wheatst3,R.drawable.wheatst4,R.drawable.wheatst5};
         final int[] numArray={R.id.imageButton16,R.id.imageButton18,R.id.imageButton19,R.id.imageButton20,R.id.imageButton21,R.id.imageButton22,R.id.imageButton23,R.id.imageButton23,
-                R.id.imageButton24,R.id.imageButton25,R.id.imageButton26,R.id.imageButton27,R.id.imageButton28,R.id.imageButton29,R.id.imageButton30,R.id.imageButton31,R.id.imageButton32};
+                R.id.imageButton24,R.id.imageButton25,R.id.imageButton26,R.id.imageButton27,R.id.imageButton28,R.id.imageButton29,R.id.imageButton30,R.id.imageButton36,R.id.imageButton37
+                ,R.id.imageButton38,R.id.imageButton39,R.id.imageButton40,R.id.imageButton41,R.id.imageButton42,R.id.imageButton43,R.id.imageButton44,R.id.imageButton45,R.id.imageButton46,R.id.imageButton32};
        final int id = v.getId();
         final Handler handler = new Handler();
        switch (id) {
@@ -169,14 +170,41 @@ public class FarmScreen extends AppCompatActivity {
            case R.id.imageButton29:
                changeImg(6,11,numArray[12],imageArray,handler);
                break;
-           case R.id.imageButton30:
+           case R.id.imageButton36:
                changeImg(0,5,numArray[13],imageArray,handler);
                break;
-           case R.id.imageButton31:
+           case R.id.imageButton37:
                changeImg(18,23,numArray[14],imageArray,handler);
                break;
-           case R.id.imageButton32:
+           case R.id.imageButton38:
                changeImg(24,29,numArray[15],imageArray,handler);
+               break;
+           case R.id.imageButton39:
+               changeImg(24,29,numArray[16],imageArray,handler);
+               break;
+           case R.id.imageButton40:
+               changeImg(0,5,numArray[17],imageArray,handler);
+               break;
+           case R.id.imageButton41:
+               changeImg(24,29,numArray[18],imageArray,handler);
+               break;
+               case R.id.imageButton42:
+               changeImg(6,11,numArray[19],imageArray,handler);
+               break;
+           case R.id.imageButton43:
+               changeImg(24,29,numArray[20],imageArray,handler);
+               break;
+           case R.id.imageButton44:
+               changeImg(18,23,numArray[21],imageArray,handler);
+               break;
+           case R.id.imageButton45:
+               changeImg(24,29,numArray[22],imageArray,handler);
+               break;
+           case R.id.imageButton46:
+               changeImg(12,17,numArray[23],imageArray,handler);
+               break;
+           case R.id.imageButton32:
+               changeImg(24,29,numArray[24],imageArray,handler);
                break;
                
         }
@@ -186,7 +214,7 @@ public class FarmScreen extends AppCompatActivity {
         Runnable runnable = new Runnable() {
             int i=start;
             public void run() {
-                ImageButton img = (ImageButton) findViewById(R.id.imageButton18);
+                ImageButton img = (ImageButton) findViewById(num);
                 if (img.getTag() == true) {
                     img.setImageResource(R.drawable.patch);
                     img.setTag(false);
