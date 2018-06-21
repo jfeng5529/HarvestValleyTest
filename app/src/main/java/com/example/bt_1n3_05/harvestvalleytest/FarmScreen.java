@@ -142,124 +142,124 @@ public class FarmScreen extends AppCompatActivity {
                break;
            case R.id.imageButton18:
                if (checkPlanted(numArray[1],1)==true) {
-               changeImg(6,11,numArray[1],1,imageArray,handler);}
-               planted[1] = true;
+               changeImg(6,11,numArray[1],1,imageArray,handler);
+               planted[1] = true;}
                break;
            case R.id.imageButton19:
                if (checkPlanted(numArray[2],2)==true) {
-               changeImg(12,17,numArray[2],2,imageArray,handler);}
-               planted[2] = true;
+               changeImg(12,17,numArray[2],2,imageArray,handler);
+               planted[2] = true;}
                break;
            case R.id.imageButton20:
                if (checkPlanted(numArray[3],3)==true) {
-               changeImg(18,23,numArray[3],3,imageArray,handler);}
-               planted[3] = true;
+               changeImg(18,23,numArray[3],3,imageArray,handler);
+               planted[3] = true;}
                break;
            case R.id.imageButton21:
                if (checkPlanted(numArray[4],4)==true) {
-               changeImg(18,23,numArray[4],4,imageArray,handler);}
-               planted[4] = true;
+               changeImg(18,23,numArray[4],4,imageArray,handler);
+               planted[4] = true;}
                break;
            case R.id.imageButton22:
                if (checkPlanted(numArray[5],5)==true) {
-               changeImg(24,29,numArray[5],5,imageArray,handler);}
-               planted[5] = true;
+               changeImg(24,29,numArray[5],5,imageArray,handler);
+               planted[5] = true;}
                break;
            case R.id.imageButton23:
                if (checkPlanted(numArray[6],6)==true) {
-               changeImg(6,11,numArray[6],6,imageArray,handler);}
-               planted[6] = true;
+               changeImg(6,11,numArray[6],6,imageArray,handler);
+               planted[6] = true;}
                break;
            case R.id.imageButton24:
                if (checkPlanted(numArray[7],7)==true) {
-               changeImg(0,5,numArray[7],7,imageArray,handler);}
-               planted[7] = true;
+               changeImg(0,5,numArray[7],7,imageArray,handler);
+               planted[7] = true;}
                break;
                case R.id.imageButton25:
                    if (checkPlanted(numArray[8],8)==true) {
-               changeImg(12,17,numArray[8],8,imageArray,handler);}
-                   planted[8] = true;
+               changeImg(12,17,numArray[8],8,imageArray,handler);
+                   planted[8] = true;}
                break;
            case R.id.imageButton26:
                if (checkPlanted(numArray[9],9)==true) {
-               changeImg(18,23,numArray[9],9,imageArray,handler);}
-               planted[9] = true;
+               changeImg(18,23,numArray[9],9,imageArray,handler);
+               planted[9] = true;}
                break;
            case R.id.imageButton27:
                if (checkPlanted(numArray[10],10)==true) {
-               changeImg(24,29,numArray[10],10,imageArray,handler);}
-               planted[10] = true;
+               changeImg(24,29,numArray[10],10,imageArray,handler);
+               planted[10] = true;}
                break;
            case R.id.imageButton28:
                if (checkPlanted(numArray[11],11)==true) {
-               changeImg(6,11,numArray[11],11,imageArray,handler);}
-               planted[11] = true;
+               changeImg(6,11,numArray[11],11,imageArray,handler);
+               planted[11] = true;}
                break;
            case R.id.imageButton36:
                if (checkPlanted(numArray[12],12)==true) {
-               changeImg(0,5,numArray[12],12,imageArray,handler);}
-               planted[12] = true;
+               changeImg(0,5,numArray[12],12,imageArray,handler);
+               planted[12] = true;}
                break;
            case R.id.imageButton37:
                if (checkPlanted(numArray[13],13)==true) {
-               changeImg(18,23,numArray[13],13,imageArray,handler);}
-               planted[13] = true;
+               changeImg(18,23,numArray[13],13,imageArray,handler);
+               planted[13] = true;}
                break;
            case R.id.imageButton38:
                if (checkPlanted(numArray[14],14)==true) {
-               changeImg(24,29,numArray[14],14,imageArray,handler);}
-               planted[14] = true;
+               changeImg(24,29,numArray[14],14,imageArray,handler);
+               planted[14] = true;}
                break;
            case R.id.imageButton39:
                if (checkPlanted(numArray[15],15)==true) {
-               changeImg(24,29,numArray[15],15,imageArray,handler);}
-               planted[15] = true;
+               changeImg(24,29,numArray[15],15,imageArray,handler);
+               planted[15] = true;}
                break;
            case R.id.imageButton40:
                if (checkPlanted(numArray[16],16)==true) {
-               changeImg(0,5,numArray[16],16,imageArray,handler);}
-               planted[16] = true;
+               changeImg(0,5,numArray[16],16,imageArray,handler);
+               planted[16] = true;}
                break;
            case R.id.imageButton41:
                if (checkPlanted(numArray[17],17)==true) {
-               changeImg(24,29,numArray[17],17,imageArray,handler);}
-               planted[17] = true;
+               changeImg(24,29,numArray[17],17,imageArray,handler);
+               planted[17] = true;}
                break;
                case R.id.imageButton42:
                    if (checkPlanted(numArray[18],18)==true) {
-               changeImg(6,11,numArray[18],18,imageArray,handler);}
-                   planted[18] = true;
+               changeImg(6,11,numArray[18],18,imageArray,handler);
+                   planted[18] = true;}
                break;
            case R.id.imageButton43:
                if (checkPlanted(numArray[19],19)==true) {
-               changeImg(24,29,numArray[19],19,imageArray,handler);}
-               planted[19] = true;
+               changeImg(24,29,numArray[19],19,imageArray,handler);
+               planted[19] = true;}
                break;
            case R.id.imageButton44:
                if (checkPlanted(numArray[20],20)==true) {
-               changeImg(18,23,numArray[20],20,imageArray,handler);}
-               planted[20] = true;
+               changeImg(18,23,numArray[20],20,imageArray,handler);
+               planted[20] = true;}
                break;
            case R.id.imageButton45:
                if (checkPlanted(numArray[21],21)==true) {
-               changeImg(24,29,numArray[21],21,imageArray,handler);}
-               planted[21] = true;
+               changeImg(24,29,numArray[21],21,imageArray,handler);
+               planted[21] = true;}
                break;
            case R.id.imageButton46:
                if (checkPlanted(numArray[22],22)==true) {
-               changeImg(12,17,numArray[22],22,imageArray,handler);}
-               planted[22] = true;
+               changeImg(12,17,numArray[22],22,imageArray,handler);
+               planted[22] = true;}
                break;
            case R.id.imageButton29:
                if (checkPlanted(numArray[23],23)==true) {
-               changeImg(24,29,numArray[23],23,imageArray,handler);}
-               planted[23] = true;
+               changeImg(24,29,numArray[23],23,imageArray,handler);
+               planted[23] = true;}
                break;
 
            case R.id.imageButton32:
                if (checkPlanted(numArray[24],24)==true) {
-               changeImg(24,29,numArray[24],24,imageArray,handler);}
-               planted[24] = true;
+               changeImg(24,29,numArray[24],24,imageArray,handler);
+               planted[24] = true;}
                break;
 
         }
