@@ -380,8 +380,10 @@
         android:layout_below="@+id/textView4"
         android:layout_marginStart="9dp"
         android:background="@android:color/transparent"
+        android:fontFamily="@font/architects_daughter"
         android:padding="10dp"
         android:text="@string/market"
-        android:textColor="#000000" />
+        android:textColor="#000000"
+        android:textSize="30sp" />
 
 </RelativeLayout>
