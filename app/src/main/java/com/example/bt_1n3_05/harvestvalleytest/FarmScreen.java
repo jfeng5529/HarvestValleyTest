@@ -134,12 +134,13 @@ public class FarmScreen extends AppCompatActivity {
                     i++;
                     if(i>imageArray.length-1)
                     {
-                        i=0;
+                        return;
                     }
-                    handler.postDelayed(this, 1200);  //for interval...
+                    handler.postDelayed(this, 1000);  //for interval...
                 }
             };
-            //handler.postDelayed(runnable, 2000); //for initial delay..
+            handler.postDelayed(runnable, 1000); //for initial delay..
+           // handler.removeCallbacksAndMessages(null);
         }
         }
 
