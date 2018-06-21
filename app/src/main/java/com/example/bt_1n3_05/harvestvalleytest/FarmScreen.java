@@ -136,10 +136,10 @@ public class FarmScreen extends AppCompatActivity {
                     {
                         i=0;
                     }
-                    handler.postDelayed(this, 50);  //for interval...
+                    handler.postDelayed(this, 1200);  //for interval...
                 }
             };
-            handler.postDelayed(runnable, 2000); //for initial delay..
+            //handler.postDelayed(runnable, 2000); //for initial delay..
         }
         }
 
