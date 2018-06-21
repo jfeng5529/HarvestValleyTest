@@ -135,11 +135,7 @@ public class FarmScreen extends AppCompatActivity {
         final Handler handler = new Handler();
        switch (id) {
            case R.id.imageButton16:
-               ImageButton img = (ImageButton) findViewById(numArray[0]);
-               if (planted[0] == true) {
-                   img.setImageResource(R.drawable.patch);
-                   planted[0] = false;
-               }else {
+               if (checkPlanted(numArray[0],0)==true) {
                    changeImg(0, 5, numArray[0], 0, imageArray, handler);
                    planted[0] = true;
                }
@@ -221,6 +217,18 @@ public class FarmScreen extends AppCompatActivity {
         }
     }
 
+    private boolean checkPlanted(int num, int index) {
+        ImageButton img = (ImageButton) findViewById(num);
+        if (planted[index] == true) {
+            img.setImageResource(R.drawable.patch);
+            planted[index] = false;
+            return false;
+        }
+        else{
+            return true;
+        }
+    }
+
     public void changeImg(final int start, final int end,final int num, final int index, final int[] imageArray, final Handler handler){
         Runnable runnable = new Runnable() {
             int i=start;
@@ -233,7 +241,7 @@ public class FarmScreen extends AppCompatActivity {
                     }
                     handler.postDelayed(this, 1200);  //for interval...
                 }
-            
+
         };
         handler.postDelayed(runnable, 2000); //for initial delay..
     }
