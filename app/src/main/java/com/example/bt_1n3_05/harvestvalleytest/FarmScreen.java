@@ -39,12 +39,15 @@ public class FarmScreen extends AppCompatActivity {
 //     private static final int SCALE_FACTOR = 4;
 //     private ImageView dog;
 //     private Bitmap[] bmps;
-
+    boolean[] planted;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.farm);
-
+        planted = new boolean[25];
+        for(boolean i:planted){
+            i=false;
+        }
 //         dog = (ImageView) findViewById(R.id.dog);
 
 //         Bitmap dogBmp = getBitmap(this, "doggie.png");
@@ -125,96 +128,101 @@ public class FarmScreen extends AppCompatActivity {
                 R.drawable.strawberryst1,R.drawable.strawberryst2,R.drawable.strawberryst3,R.drawable.strawberryst4,R.drawable.strawberryst5,R.drawable.strawberryst6,
                 R.drawable.tomatost1,R.drawable.tomatost2,R.drawable.tomatost3,R.drawable.tomatost4,R.drawable.tomatost5,R.drawable.tomatost6,
                 R.drawable.wheatst1,R.drawable.wheatst2,R.drawable.wheatst3,R.drawable.wheatst4,R.drawable.wheatst5};
-        final int[] numArray={R.id.imageButton16,R.id.imageButton18,R.id.imageButton19,R.id.imageButton20,R.id.imageButton21,R.id.imageButton22,R.id.imageButton23,R.id.imageButton23,
-                R.id.imageButton24,R.id.imageButton25,R.id.imageButton26,R.id.imageButton27,R.id.imageButton28,R.id.imageButton29,R.id.imageButton30,R.id.imageButton36,R.id.imageButton37
-                ,R.id.imageButton38,R.id.imageButton39,R.id.imageButton40,R.id.imageButton41,R.id.imageButton42,R.id.imageButton43,R.id.imageButton44,R.id.imageButton45,R.id.imageButton46,R.id.imageButton32};
+        final int[] numArray={R.id.imageButton16,R.id.imageButton18,R.id.imageButton19,R.id.imageButton20,R.id.imageButton21,R.id.imageButton22,R.id.imageButton23,R.id.imageButton24,
+                R.id.imageButton25,R.id.imageButton26,R.id.imageButton27,R.id.imageButton28,R.id.imageButton36,R.id.imageButton37
+                ,R.id.imageButton38,R.id.imageButton39,R.id.imageButton40,R.id.imageButton41,R.id.imageButton42,R.id.imageButton43,R.id.imageButton44,R.id.imageButton45,R.id.imageButton46,R.id.imageButton29,R.id.imageButton32};
        final int id = v.getId();
         final Handler handler = new Handler();
        switch (id) {
            case R.id.imageButton16:
-                changeImg(0,5,numArray[0],imageArray,handler);
+                changeImg(0,5,numArray[0],0,imageArray,handler);
                break;
            case R.id.imageButton18:
-               changeImg(6,11,numArray[1],imageArray,handler);
+               changeImg(6,11,numArray[1],1,imageArray,handler);
                break;
            case R.id.imageButton19:
-               changeImg(12,17,numArray[2],imageArray,handler);
+               changeImg(12,17,numArray[2],2,imageArray,handler);
                break;
            case R.id.imageButton20:
-               changeImg(18,23,numArray[3],imageArray,handler);
+               changeImg(18,23,numArray[3],3,imageArray,handler);
                break;
            case R.id.imageButton21:
-               changeImg(18,23,numArray[4],imageArray,handler);
+               changeImg(18,23,numArray[4],4,imageArray,handler);
                break;
            case R.id.imageButton22:
-               changeImg(24,29,numArray[5],imageArray,handler);
+               changeImg(24,29,numArray[5],5,imageArray,handler);
                break;
            case R.id.imageButton23:
-               changeImg(6,11,numArray[6],imageArray,handler);
+               changeImg(6,11,numArray[6],6,imageArray,handler);
                break;
            case R.id.imageButton24:
-               changeImg(0,5,numArray[7],imageArray,handler);
+               changeImg(0,5,numArray[7],7,imageArray,handler);
                break;
                case R.id.imageButton25:
-               changeImg(12,17,numArray[8],imageArray,handler);
+               changeImg(12,17,numArray[8],8,imageArray,handler);
                break;
            case R.id.imageButton26:
-               changeImg(18,23,numArray[9],imageArray,handler);
+               changeImg(18,23,numArray[9],9,imageArray,handler);
                break;
            case R.id.imageButton27:
-               changeImg(24,29,numArray[10],imageArray,handler);
+               changeImg(24,29,numArray[10],10,imageArray,handler);
                break;
            case R.id.imageButton28:
-               changeImg(6,11,numArray[11],imageArray,handler);
-               break;
-           case R.id.imageButton29:
-               changeImg(6,11,numArray[12],imageArray,handler);
+               changeImg(6,11,numArray[11],11,imageArray,handler);
                break;
            case R.id.imageButton36:
-               changeImg(0,5,numArray[13],imageArray,handler);
+               changeImg(0,5,numArray[12],12,imageArray,handler);
                break;
            case R.id.imageButton37:
-               changeImg(18,23,numArray[14],imageArray,handler);
+               changeImg(18,23,numArray[13],13,imageArray,handler);
                break;
            case R.id.imageButton38:
-               changeImg(24,29,numArray[15],imageArray,handler);
+               changeImg(24,29,numArray[14],14,imageArray,handler);
                break;
            case R.id.imageButton39:
-               changeImg(24,29,numArray[16],imageArray,handler);
+               changeImg(24,29,numArray[15],15,imageArray,handler);
                break;
            case R.id.imageButton40:
-               changeImg(0,5,numArray[17],imageArray,handler);
+               changeImg(0,5,numArray[16],16,imageArray,handler);
                break;
            case R.id.imageButton41:
-               changeImg(24,29,numArray[18],imageArray,handler);
+               changeImg(24,29,numArray[17],17,imageArray,handler);
                break;
                case R.id.imageButton42:
-               changeImg(6,11,numArray[19],imageArray,handler);
+               changeImg(6,11,numArray[18],18,imageArray,handler);
                break;
            case R.id.imageButton43:
-               changeImg(24,29,numArray[20],imageArray,handler);
+               changeImg(24,29,numArray[19],19,imageArray,handler);
                break;
            case R.id.imageButton44:
-               changeImg(18,23,numArray[21],imageArray,handler);
+               changeImg(18,23,numArray[20],20,imageArray,handler);
                break;
            case R.id.imageButton45:
-               changeImg(24,29,numArray[22],imageArray,handler);
+               changeImg(24,29,numArray[21],21,imageArray,handler);
                break;
            case R.id.imageButton46:
-               changeImg(12,17,numArray[23],imageArray,handler);
+               changeImg(12,17,numArray[22],22,imageArray,handler);
                break;
+           case R.id.imageButton29:
+               changeImg(24,29,numArray[23],23,imageArray,handler);
+               break;
+
            case R.id.imageButton32:
-               changeImg(24,29,numArray[24],imageArray,handler);
+               changeImg(24,29,numArray[24],24,imageArray,handler);
                break;
 
         }
     }
 
-    public void changeImg(final int start, final int end,final int num, final int[] imageArray, final Handler handler){
+    public void changeImg(final int start, final int end,final int num, final int index, final int[] imageArray, final Handler handler){
         Runnable runnable = new Runnable() {
             int i=start;
             public void run() {
                 ImageButton img = (ImageButton) findViewById(num);
+                if (planted[index] == true) {
+                    img.setImageResource(R.drawable.patch);
+                    planted[index] = false;
+                } else {
                     img.setImageResource(imageArray[i]);
                     i++;
                     if (i > end) {
@@ -222,7 +230,9 @@ public class FarmScreen extends AppCompatActivity {
                     }
                     img.setTag(true);
                     handler.postDelayed(this, 1200);  //for interval...
+                    planted[index]=true;
                 }
+            }
         };
         handler.postDelayed(runnable, 2000); //for initial delay..
     }
