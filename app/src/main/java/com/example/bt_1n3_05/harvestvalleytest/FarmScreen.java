@@ -215,10 +215,6 @@ public class FarmScreen extends AppCompatActivity {
             int i=start;
             public void run() {
                 ImageButton img = (ImageButton) findViewById(num);
-                if ((boolean)img.getTag() == true) {
-                    img.setImageResource(R.drawable.patch);
-                    img.setTag(false);
-                } else {
                     img.setImageResource(imageArray[i]);
                     i++;
                     if (i > end) {
@@ -227,7 +223,6 @@ public class FarmScreen extends AppCompatActivity {
                     img.setTag(true);
                     handler.postDelayed(this, 1200);  //for interval...
                 }
-            }
         };
         handler.postDelayed(runnable, 2000); //for initial delay..
     }
