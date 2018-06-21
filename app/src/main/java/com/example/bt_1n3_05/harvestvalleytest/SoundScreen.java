@@ -8,9 +8,10 @@ public class SoundScreen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sound_screen);
+        //setContentView(R.layout.activity_sound_screen);
     }
 }
+// Consider deleting
 
 //package com.example.bt_1n3_05.harvestvalleytest;
 //

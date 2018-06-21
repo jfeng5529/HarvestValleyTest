@@ -8,39 +8,11 @@
     tools:context="com.example.bt_1n3_05.harvestvalleytest.FarmScreen">
 
     <ImageButton
-        android:id="@+id/imageButton24"
-        android:layout_width="100dp"
-        android:layout_height="110dp"
-        android:layout_alignEnd="@+id/imageButton40"
-        android:layout_below="@+id/imageButton39"
-        android:layout_marginEnd="27dp"
-        android:layout_marginTop="11dp"
-        android:adjustViewBounds="true"
-        android:background="@android:color/transparent"
-        android:scaleType="fitCenter"
-        app:srcCompat="@drawable/arrow" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/imageButton40"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="22dp"
-        android:layout_toEndOf="@+id/imageButton39"
-        android:contentDescription="@string/barn"
-        android:fontFamily="@font/architects_daughter"
-        android:text="@string/barn"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textSize="24sp"
-        android:typeface="normal" />
-
-    <ImageButton
         android:id="@+id/house"
         android:layout_width="280dp"
         android:layout_height="300dp"
-        android:layout_above="@+id/imageButton23"
-        android:layout_toStartOf="@+id/imageButton42"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
         android:contentDescription="@string/house"
@@ -49,11 +21,13 @@
 
     <ImageButton
         android:id="@+id/imageButton16"
+        android:onClick="plantCrop"
         android:layout_width="58dp"
         android:layout_height="58dp"
         android:layout_alignParentStart="true"
-        android:layout_alignTop="@+id/imageButton45"
-        android:layout_marginStart="13dp"
+        android:layout_below="@+id/house"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="17dp"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
         android:contentDescription="@string/patch"
@@ -69,6 +43,7 @@
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
         android:contentDescription="@string/patch"
+        android:onClick="plantCrop"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/patch" />
 
@@ -81,6 +56,7 @@
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
         android:contentDescription="@string/patch"
+        android:onClick="plantCrop"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/patch" />
 
@@ -88,11 +64,13 @@
         android:id="@+id/imageButton20"
         android:layout_width="58dp"
         android:layout_height="58dp"
-        android:layout_alignTop="@+id/imageButton22"
-        android:layout_toEndOf="@+id/imageButton28"
+        android:layout_alignStart="@+id/imageButton16"
+        android:layout_below="@+id/dog"
+        android:layout_marginTop="34dp"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
         android:contentDescription="@string/patch"
+        android:onClick="plantCrop"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/patch" />
 
@@ -105,6 +83,7 @@
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
         android:contentDescription="@string/patch"
+        android:onClick="plantCrop"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/patch" />
 
@@ -112,11 +91,12 @@
         android:id="@+id/imageButton22"
         android:layout_width="58dp"
         android:layout_height="58dp"
-        android:layout_alignTop="@+id/imageButton36"
-        android:layout_toEndOf="@+id/imageButton19"
+        android:layout_alignTop="@+id/imageButton19"
+        android:layout_toEndOf="@+id/imageButton18"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
         android:contentDescription="@string/patch"
+        android:onClick="plantCrop"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/patch" />
 
@@ -129,6 +109,7 @@
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
         android:contentDescription="@string/patch"
+        android:onClick="plantCrop"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/patch" />
 
@@ -136,11 +117,12 @@
         android:id="@+id/imageButton24"
         android:layout_width="58dp"
         android:layout_height="58dp"
-        android:layout_alignTop="@+id/imageButton30"
-        android:layout_toEndOf="@+id/imageButton28"
+        android:layout_alignTop="@+id/imageButton21"
+        android:layout_toEndOf="@+id/imageButton25"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
         android:contentDescription="@string/patch"
+        android:onClick="plantCrop"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/patch" />
 
@@ -148,11 +130,12 @@
         android:id="@+id/imageButton25"
         android:layout_width="58dp"
         android:layout_height="58dp"
-        android:layout_alignStart="@+id/imageButton16"
-        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/imageButton28"
+        android:layout_alignTop="@+id/imageButton22"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
         android:contentDescription="@string/patch"
+        android:onClick="plantCrop"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/patch" />
 
@@ -165,6 +148,7 @@
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
         android:contentDescription="@string/patch"
+        android:onClick="plantCrop"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/patch" />
 
@@ -177,6 +161,7 @@
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
         android:contentDescription="@string/patch"
+        android:onClick="plantCrop"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/patch" />
 
@@ -184,11 +169,12 @@
         android:id="@+id/imageButton28"
         android:layout_width="58dp"
         android:layout_height="58dp"
-        android:layout_alignTop="@+id/imageButton19"
-        android:layout_toStartOf="@+id/imageButton19"
+        android:layout_alignTop="@+id/imageButton24"
+        android:layout_toEndOf="@+id/dog"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
         android:contentDescription="@string/patch"
+        android:onClick="plantCrop"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/patch" />
 
@@ -196,12 +182,13 @@
         android:id="@+id/imageButton36"
         android:layout_width="58dp"
         android:layout_height="58dp"
-        android:layout_alignStart="@+id/imageButton45"
-        android:layout_below="@+id/imageButton45"
-        android:layout_marginTop="9dp"
+        android:layout_alignStart="@+id/imageButton20"
+        android:layout_below="@+id/imageButton19"
+        android:layout_marginTop="8dp"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
         android:contentDescription="@string/patch"
+        android:onClick="plantCrop"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/patch" />
 
@@ -214,6 +201,7 @@
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
         android:contentDescription="@string/patch"
+        android:onClick="plantCrop"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/patch" />
 
@@ -226,6 +214,7 @@
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
         android:contentDescription="@string/patch"
+        android:onClick="plantCrop"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/patch" />
 
@@ -233,11 +222,13 @@
         android:id="@+id/imageButton39"
         android:layout_width="58dp"
         android:layout_height="58dp"
-        android:layout_alignTop="@+id/imageButton27"
-        android:layout_toStartOf="@+id/imageButton41"
+        android:layout_alignStart="@+id/imageButton36"
+        android:layout_alignTop="@+id/imageButton36"
+        android:layout_marginTop="48dp"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
         android:contentDescription="@string/patch"
+        android:onClick="plantCrop"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/patch" />
 
@@ -250,6 +241,7 @@
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
         android:contentDescription="@string/patch"
+        android:onClick="plantCrop"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/patch" />
 
@@ -262,6 +254,7 @@
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
         android:contentDescription="@string/patch"
+        android:onClick="plantCrop"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/patch" />
 
@@ -274,6 +267,7 @@
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
         android:contentDescription="@string/patch"
+        android:onClick="plantCrop"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/patch" />
 
@@ -281,11 +275,12 @@
         android:id="@+id/imageButton43"
         android:layout_width="58dp"
         android:layout_height="58dp"
-        android:layout_above="@+id/imageButton36"
-        android:layout_toEndOf="@+id/imageButton46"
+        android:layout_alignTop="@+id/imageButton45"
+        android:layout_toEndOf="@+id/imageButton45"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
         android:contentDescription="@string/patch"
+        android:onClick="plantCrop"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/patch" />
 
@@ -298,6 +293,7 @@
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
         android:contentDescription="@string/patch"
+        android:onClick="plantCrop"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/patch" />
 
@@ -306,11 +302,11 @@
         android:layout_width="58dp"
         android:layout_height="58dp"
         android:layout_alignStart="@+id/imageButton46"
-        android:layout_below="@+id/house"
-        android:layout_marginTop="48dp"
+        android:layout_alignTop="@+id/imageButton40"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
         android:contentDescription="@string/patch"
+        android:onClick="plantCrop"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/patch" />
 
@@ -318,12 +314,12 @@
         android:id="@+id/imageButton46"
         android:layout_width="58dp"
         android:layout_height="58dp"
-        android:layout_centerVertical="true"
-        android:layout_marginStart="33dp"
-        android:layout_toEndOf="@+id/imageButton21"
+        android:layout_alignStart="@+id/imageButton25"
+        android:layout_alignTop="@+id/imageButton38"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
         android:contentDescription="@string/patch"
+        android:onClick="plantCrop"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/patch" />
 
@@ -332,46 +328,48 @@
         android:id="@+id/imageButton29"
         android:layout_width="58dp"
         android:layout_height="58dp"
-        android:layout_alignStart="@+id/imageButton42"
         android:layout_alignTop="@+id/imageButton43"
+        android:layout_toEndOf="@+id/imageButton43"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
-        android:contentDescription="@string/patch"
+        android:onClick="plantCrop"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/patch" />
-
-
-    <!--<ImageView-->
-        <!--android:id="@+id/dog"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_centerInParent="true"-->
-        <!--android:contentDescription="@string/dog" />-->
 
     <ImageButton
-        android:id="@+id/imageButton30"
-        android:layout_width="58dp"
-        android:layout_height="58dp"
-        android:layout_alignStart="@+id/imageButton28"
-        android:layout_alignTop="@+id/imageButton28"
-        android:layout_marginTop="49dp"
-        android:adjustViewBounds="true"
+        android:id="@+id/imageButton32"
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:layout_alignEnd="@+id/imageButton29"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
         android:background="@android:color/transparent"
-        android:contentDescription="@string/patch"
+        android:contentDescription="@string/arrow"
         android:scaleType="fitCenter"
-        app:srcCompat="@drawable/patch" />
+        app:srcCompat="@drawable/arrow" />
 
-    <Button
-        android:id="@+id/market"
+    //
+
+    <TextView
+        android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/imageButton24"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="38dp"
-        android:layout_marginEnd="8dp"
-        android:background="@android:color/transparent"
-        android:padding="10dp"
-        android:text="@string/market"
-        android:textColor="#000000" />
+        android:layout_alignEnd="@+id/imageButton32"
+        android:layout_below="@+id/imageButton43"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/barn"
+        android:fontFamily="@font/architects_daughter"
+        android:text="@string/barn"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:typeface="normal" />
+
+    <ImageView
+        android:id="@+id/dog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
 
 </RelativeLayout>

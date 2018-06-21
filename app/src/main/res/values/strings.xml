@@ -39,5 +39,6 @@
     <string name="barn">BARN</string>
     <string name="buy">Buy</string>
     <string name="test">test</string>
-    <string name="inventory">test</string>
+    <string name="animalpane">TextView</string>
+    <string name="seed">TextView</string>
 </resources>
