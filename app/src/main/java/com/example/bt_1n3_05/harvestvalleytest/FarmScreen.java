@@ -1,5 +1,6 @@
 package com.example.bt_1n3_05.harvestvalleytest;
 
+import android.content.Intent;
 import android.content.res.AssetManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -13,7 +14,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageSwitcher;
 import android.widget.ImageView;
-
+import android.widget.Button;
 import android.widget.ImageButton;
 
 
@@ -29,6 +30,8 @@ import java.util.TimerTask;
  */
 
 public class FarmScreen extends AppCompatActivity {
+
+    private Button market;
     //28 by 34
 //     private static final int FRAME_W = 28;
 //     private static final int FRAME_H = 34;
@@ -44,6 +47,19 @@ public class FarmScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.farm);
+
+        market = findViewById(R.id.market);
+        market.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openMarketScreen();
+            }
+        });
+    }
+    public void openMarketScreen(){
+        Intent intent = new Intent(this,InventoryScreen.class);
+        startActivity(intent);
+    }
 
 //         dog = (ImageView) findViewById(R.id.dog);
 
@@ -118,7 +134,7 @@ public class FarmScreen extends AppCompatActivity {
 // }
 // }
 
-    }
+
     public void plantCrop(View v) {
        // final int id = v.getId();
        // switch (id) {
