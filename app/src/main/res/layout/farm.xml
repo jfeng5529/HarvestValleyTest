@@ -332,6 +332,7 @@
         android:layout_toEndOf="@+id/imageButton43"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
+        android:contentDescription="@string/patch"
         android:onClick="plantCrop"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/patch" />
