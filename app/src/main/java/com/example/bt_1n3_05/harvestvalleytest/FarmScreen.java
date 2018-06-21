@@ -135,7 +135,14 @@ public class FarmScreen extends AppCompatActivity {
         final Handler handler = new Handler();
        switch (id) {
            case R.id.imageButton16:
-                changeImg(0,5,numArray[0],0,imageArray,handler);
+               ImageButton img = (ImageButton) findViewById(numArray[0]);
+               if (planted[0] == true) {
+                   img.setImageResource(R.drawable.patch);
+                   planted[0] = false;
+               }else {
+                   changeImg(0, 5, numArray[0], 0, imageArray, handler);
+                   planted[0] = true;
+               }
                break;
            case R.id.imageButton18:
                changeImg(6,11,numArray[1],1,imageArray,handler);
@@ -219,20 +226,14 @@ public class FarmScreen extends AppCompatActivity {
             int i=start;
             public void run() {
                 ImageButton img = (ImageButton) findViewById(num);
-                if (planted[index] == true) {
-                    img.setImageResource(R.drawable.patch);
-                    planted[index] = false;
-                } else {
                     img.setImageResource(imageArray[i]);
                     i++;
                     if (i > end) {
                         return;
                     }
-                    img.setTag(true);
                     handler.postDelayed(this, 1200);  //for interval...
-                    planted[index]=true;
                 }
-            }
+            
         };
         handler.postDelayed(runnable, 2000); //for initial delay..
     }
