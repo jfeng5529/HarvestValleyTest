@@ -120,29 +120,91 @@ public class FarmScreen extends AppCompatActivity {
 
     }
     public void plantCrop(View v) {
-       // final int id = v.getId();
-       // switch (id) {
-            final int []imageArray={R.drawable.cornst1,R.drawable.cornst2,R.drawable.cornst3,R.drawable.cornst4,R.drawable.cornst5,R.drawable.cornst6};
+        final int []imageArray={R.drawable.cornst1,R.drawable.cornst2,R.drawable.cornst3,R.drawable.cornst4,R.drawable.cornst5,R.drawable.cornst6,R.drawable.pepperst1,R.drawable.pepperst2,R.drawable.pepperst3,R.drawable.pepperst4,R.drawable.pepperst5,R.drawable.pepperst6,
+                R.drawable.potatost1,R.drawable.potatost2,R.drawable.potatost3,R.drawable.potatost4,R.drawable.potatost5,R.drawable.potatost6,
+                R.drawable.strawberryst1,R.drawable.strawberryst2,R.drawable.strawberryst3,R.drawable.strawberryst4,R.drawable.strawberryst5,R.drawable.strawberryst6,
+                R.drawable.tomatost1,R.drawable.tomatost2,R.drawable.tomatost3,R.drawable.tomatost4,R.drawable.tomatost5,R.drawable.tomatost6,
+                R.drawable.wheatst1,R.drawable.wheatst2,R.drawable.wheatst3,R.drawable.wheatst4,R.drawable.wheatst5};
+        final int[] numArray={R.id.imageButton16,R.id.imageButton18,R.id.imageButton19,R.id.imageButton20,R.id.imageButton21,R.id.imageButton22,R.id.imageButton23,R.id.imageButton23,
+                R.id.imageButton24,R.id.imageButton25,R.id.imageButton26,R.id.imageButton27,R.id.imageButton28,R.id.imageButton29,R.id.imageButton30,R.id.imageButton31,R.id.imageButton32};
+       final int id = v.getId();
+        final Handler handler = new Handler();
+       switch (id) {
+           case R.id.imageButton16:
+                changeImg(0,5,numArray[0],imageArray,handler);
+               break;
+           case R.id.imageButton18:
+               changeImg(6,11,numArray[1],imageArray,handler);
+               break;
+           case R.id.imageButton19:
+               changeImg(12,17,numArray[2],imageArray,handler);
+               break;
+           case R.id.imageButton20:
+               changeImg(18,23,numArray[3],imageArray,handler);
+               break;
+           case R.id.imageButton21:
+               changeImg(18,23,numArray[4],imageArray,handler);
+               break;
+           case R.id.imageButton22:
+               changeImg(24,29,numArray[5],imageArray,handler);
+               break;
+           case R.id.imageButton23:
+               changeImg(6,11,numArray[6],imageArray,handler);
+               break;
+           case R.id.imageButton24:
+               changeImg(0,5,numArray[7],imageArray,handler);
+               break;
+               case R.id.imageButton25:
+               changeImg(12,17,numArray[8],imageArray,handler);
+               break;
+           case R.id.imageButton26:
+               changeImg(18,23,numArray[9],imageArray,handler);
+               break;
+           case R.id.imageButton27:
+               changeImg(24,29,numArray[10],imageArray,handler);
+               break;
+           case R.id.imageButton28:
+               changeImg(6,11,numArray[11],imageArray,handler);
+               break;
+           case R.id.imageButton29:
+               changeImg(6,11,numArray[12],imageArray,handler);
+               break;
+           case R.id.imageButton30:
+               changeImg(0,5,numArray[13],imageArray,handler);
+               break;
+           case R.id.imageButton31:
+               changeImg(18,23,numArray[14],imageArray,handler);
+               break;
+           case R.id.imageButton32:
+               changeImg(24,29,numArray[15],imageArray,handler);
+               break;
+               
+        }
+    }
 
-
-            final Handler handler = new Handler();
-            Runnable runnable = new Runnable() {
-                int i=0;
-                public void run() {
-                    ImageButton img = (ImageButton) findViewById(R.id.imageButton16);
+    public void changeImg(final int start, final int end,final int num, final int[] imageArray, final Handler handler){
+        Runnable runnable = new Runnable() {
+            int i=start;
+            public void run() {
+                ImageButton img = (ImageButton) findViewById(R.id.imageButton18);
+                if (img.getTag() == true) {
+                    img.setImageResource(R.drawable.patch);
+                    img.setTag(false);
+                } else {
                     img.setImageResource(imageArray[i]);
                     i++;
-                    if(i>imageArray.length-1)
-                    {
+                    if (i > end) {
                         return;
                     }
-                    handler.postDelayed(this, 1000);  //for interval...
+                    img.setTag(true);
+                    handler.postDelayed(this, 1200);  //for interval...
                 }
-            };
-            handler.postDelayed(runnable, 1000); //for initial delay..
-           // handler.removeCallbacksAndMessages(null);
-        }
-        }
+            }
+        };
+        handler.postDelayed(runnable, 2000); //for initial delay..
+    }
+
+}
 
 
         /**switch (id) {
