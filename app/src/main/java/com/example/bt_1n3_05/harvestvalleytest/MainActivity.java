@@ -29,13 +29,6 @@ public class MainActivity extends AppCompatActivity {
            }
        });
 
-        Button testButton = (Button)findViewById(R.id.test);
-        testButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openInventoryScreen();
-            }
-        });
     }
 
     public void openInventoryScreen() {
