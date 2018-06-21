@@ -206,7 +206,7 @@ public class FarmScreen extends AppCompatActivity {
            case R.id.imageButton32:
                changeImg(24,29,numArray[24],imageArray,handler);
                break;
-               
+
         }
     }
 
@@ -215,7 +215,7 @@ public class FarmScreen extends AppCompatActivity {
             int i=start;
             public void run() {
                 ImageButton img = (ImageButton) findViewById(num);
-                if (img.getTag() == true) {
+                if ((boolean)img.getTag() == true) {
                     img.setImageResource(R.drawable.patch);
                     img.setTag(false);
                 } else {
